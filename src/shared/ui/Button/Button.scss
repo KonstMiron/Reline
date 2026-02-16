@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 80px;
+  border-radius: 999px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  box-shadow: none;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  &--primary {
+    background: #111111;
+    color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: #111111;
+    }
+  }
+
+  &--secondary {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
+  }
+}

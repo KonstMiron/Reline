@@ -1,0 +1,210 @@
+/* ============================
+   0. GOOGLE FONTS
+   ============================ */
+   
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Lora:wght@400;500;600;700&display=swap");
+
+
+/* ============================
+   1. GLOBAL VARIABLES
+   ============================ */
+
+:root {
+  /* Основні кольори бренду */
+  --color-white: #ffffff;
+  --color-black: #000;
+
+  /* Текст та фон */
+  --text-color: var(--color-white);
+  --bg-color: var(--color-black);
+}
+
+
+/* ============================
+   2. BASE ELEMENT STYLES
+   ============================ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif; /* Основний текст */
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Заголовки = Cinzel */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3,
+h4,
+h5 {
+  font-size: 20px;
+}
+
+/* Посилання */
+a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--text-color);
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8; /* Легка анімація без зміни кольору */
+  }
+}
+
+/* Кнопки */
+button {
+  transition: 0.2s;
+  font-family: "Cinzel", serif;
+  color: var(--text-color);
+  background: transparent;
+}
+
+
+/* ============================
+   3. GLOBAL UTILITY CLASSES
+   ============================ */
+
+.container {
+  padding: 0 calc(50vw - 700px);
+}
+
+
+/* ============================
+   4. BUTTON STYLES
+   ============================ */
+
+.button_1,
+.button_2,
+.button_3,
+.button_4,
+.button_5 {
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+  border-radius: 100px;
+}
+
+/* Основна біла кнопка (бігова) */
+.button_1 {
+  padding: 15px 68px;
+  background: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-white);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: var(--color-white);
+  }
+}
+
+/* Чорна кнопка з білим бордером */
+.button_2 {
+  padding: 15px 68px;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}
+
+/* Тонша кнопка */
+.button_3 {
+  padding: 15px 68px;
+  border: 1px solid var(--color-white);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+/* Менша кнопка (наприклад, у хедері) */
+.button_4 {
+  padding: 10px 25px;
+  border: 1px solid var(--color-white);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}
+
+/* Інверсія: чорний фон + білий бордер */
+.button_5 {
+  padding: 15px 68px;
+  border: 1px solid var(--color-white);
+  background: var(--color-black);
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}
+
+/* ============================
+   5. MEDIA QUERIES
+   ============================ */
+
+@media screen and (max-width: 1450px) {
+  .container {
+    padding: 0 calc(50vw - 350px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 calc(50vw - 220px);
+  }
+}
