@@ -1,10 +1,11 @@
-.header {
+.header2 {
   position: sticky;
   top: 0;
   z-index: 20;
 
   height: 10vh;
-  background: var(--bg-color);
+  background: rgba(8, 8, 8, 0.95);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,17 +14,18 @@
     height 0.5s ease,
     background 0.5s ease;
 
-  .header__content {
+  .header2__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
-  .header__nav {
+  .header2__nav {
     display: flex;
-    gap: 48px;
+    gap: 100px;
     transition: gap 1.2s ease;
+    flex: 1;
 
     a,
     button {
@@ -42,19 +44,28 @@
         opacity: 0.6;
       }
     }
+
+    &--left {
+      justify-content: flex-start;
+      gap: 180px;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
   }
 
-  .header__dropdown-wrapper {
+  .header2__dropdown-wrapper {
     position: relative;
   }
 
-  .header__dropdown {
+  .header2__dropdown {
     display: flex;
     align-items: center;
     gap: 8px;
   }
 
-  .header__caret {
+  .header2__caret {
     display: inline-flex;
     align-items: center;
     transition: transform 0.3s ease;
@@ -64,12 +75,16 @@
       height: auto;
     }
 
-    &--rotated {
+    &--default {
       transform: rotate(180deg);
+    }
+
+    &--rotated {
+      transform: rotate(0deg);
     }
   }
 
-  .header__dropdown-menu {
+  .header2__dropdown-menu {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -88,7 +103,7 @@
     }
   }
 
-  .header__dropdown-item {
+  .header2__dropdown-item {
     background: #2E2D2D !important;
     border-radius: 50px;
     display: flex;
@@ -121,28 +136,15 @@
     }
   }
 
-  .header__logo {
+  .header2__logo {
     display: inline-block;
     
     img {
-      width: 500px;
+      width: 140px;
       height: auto;
       transition: width 1.2s ease;
-      transform: translateY(-50px);
+      transform: translateY(0px);
+      margin: 0 60px;
     }
-  }
-}
-
-.header--scrolled {
-  height: 10vh;
-  background: rgba(8, 8, 8, 0.95);
-  backdrop-filter: blur(6px);
-
-  .header__logo img {
-    width: 140px;
-    transform: translateY(0px); 
-  }
-  .header__nav {
-    gap: 150px;
   }
 }

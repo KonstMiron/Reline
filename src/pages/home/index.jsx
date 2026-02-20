@@ -1,5 +1,6 @@
 import Hero from "./Hero";
 import Header from "@/widgets/header";
+import Footer from "@/widgets/footer";
 import LaserSection from "./LaserSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ServicesSection />
       <InstagramSection />
       <GallerySection />
+      <Footer />
     </>
   );
 };

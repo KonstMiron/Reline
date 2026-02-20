@@ -1,18 +1,20 @@
 import { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import logoHeader from "@/shared/assets/images/logo-header.svg";
+import arrowZabiegi from "@/shared/assets/images/arrow-zabiegi.svg";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const headerRef = useRef(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!headerRef.current) return;
-
-      const rect = headerRef.current.getBoundingClientRect();
-
-      setIsScrolled(rect.top <= 0);
+      const scrollPosition = window.scrollY;
+      // Вважаємо хедер прокрученим, якщо проскролили більше ніж висоту Hero (90vh)
+      const heroHeight = window.innerHeight * 0.9;
+      setIsScrolled(scrollPosition > heroHeight - 100);
     };
 
     handleScroll();
@@ -21,24 +23,57 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   const headerClassName = isScrolled ? "header header--scrolled" : "header";
 
   return (
-    <header ref={headerRef} className={headerClassName}>
+    <header className={headerClassName}>
       <div className="container header__content">
         <nav className="header__nav header__nav--left">
-          <a href="#">STRONA GŁÓWNA</a>
+          <Link to="/">STRONA GŁÓWNA</Link>
           <a href="#">CENNIK</a>
         </nav>
 
-        <div className="header__logo">
+        <Link to="/" className="header__logo">
           <img src={logoHeader} alt="R'LINE Logo" />
-        </div>
+        </Link>
 
         <nav className="header__nav header__nav--right">
-          <button className="header__dropdown">
-            ZABIEGI <span className="header__caret">˄</span>
-          </button>
+          <div className="header__dropdown-wrapper" ref={dropdownRef}>
+            <button className="header__dropdown" onClick={toggleDropdown}>
+              ZABIEGI 
+              <span className={`header__caret ${(isScrolled && !isDropdownOpen) || (!isScrolled && isDropdownOpen) ? 'header__caret--rotated' : ''}`}>
+                <img src={arrowZabiegi} alt="Arrow" />
+              </span>
+            </button>
+            {isDropdownOpen && (
+              <div className={`header__dropdown-menu ${isScrolled ? 'header__dropdown-menu--down' : 'header__dropdown-menu--up'}`}>
+                <a href="#" className="header__dropdown-item">
+                  USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
+                </a>
+                <a href="#" className="header__dropdown-item">
+                  LASEROWE USUWANIE MAKIJAŻU PERMANENTNEGO
+                </a>
+                <Link to="/laser-tattoo-removal" className="header__dropdown-item">
+                  LASEROWE USUWANIE TATUAŻU
+                </Link>
+              </div>
+            )}
+          </div>
           <a href="#">KONTAKT</a>
         </nav>
       </div>
