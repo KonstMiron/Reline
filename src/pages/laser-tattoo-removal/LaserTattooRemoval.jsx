@@ -1,6 +1,7 @@
 import Header2 from "@/widgets/header2";
 import Footer from "@/widgets/footer";
 import { Button } from "@/shared/ui/Button";
+import PortfolioSection from "./PortfolioSection";
 import "./LaserTattooRemoval.scss";
 import logo from "@/shared/assets/images/laser-tattoo-removal/reline.svg";
 import photo1 from "@/shared/assets/images/laser-tattoo-removal/Photo1.jpg";
@@ -12,19 +13,19 @@ const LaserTattooRemoval = () => {
     {
       questions: [
         {
-          title: "CZY ZABIEG JEST BOLESNY?",
+          title: "Czy zabieg jest bolesny?",
           description:
-            "Odczucia są indywidualne, jednak dzięki zastosowaniu systemu chłodzenia skóry CRYO ból jest znacznie zredukowany.\nWiększość osób porównuje go do lekkiego uczucia poczenia lub ukłucia.",
+            "Odczucia są indywidualne, jednak dzięki zastosowaniu systemu chłodzenia skóry CRYO ból jest znacznie zredukowany.\nWiększość osób porównuje go do lekkiego uczucia pieczenia lub ukłuć.",
         },
         {
-          title: "CZY PO ZABIEGU ZOSTAJĄ BLIZNY?",
+          title: "Czy po zabiegu zostają blizny?",
           description:
-            "Nie. Laser działa selektywnie na pigment, nie narusza naskórka i nie wpływa na otaczające tkanki.\nSkóra po zabiegu może być lekko zaczerowieniona lub opuchnięta, ale to naturalna reakcja, która ustępuje po kilku godzinach.",
+            "Nie. Laser działa selektywnie na pigment, nie narusza naskórka i nie wpływa na otaczające tkanki.\nSkóra po zabiegu może być lekko zaczerwieniona lub opuchnięta, ale to naturalna reakcja, która ustępuje po kilku godzinach.",
         },
         {
-          title: "JAK PRZYGOTOWAĆ SIĘ DO ZABIEGU?",
+          title: "Jak przygotować się do zabiegu?",
           description:
-            "Nie należy opalać skóry ani stosować samoopalaezy przez minimum 2 tygodnie przed zabiegiem.\nSkóra powinna być czysta, sucha i niepodraźniona.\nW dniu zabiegu nie nakładaj kremów ani kosmetyków w miejscu tatuażu.",
+            "Nie należy opalać skóry ani stosować samoopalaczy przez minimum 2 tygodnie przed zabiegiem.\nSkóra powinna być czysta, sucha i niepodrażniona.\nW dniu zabiegu nie należy nakładać kremów ani kosmetyków w miejscu tatuażu.",
         },
       ],
       image: photo1,
@@ -34,41 +35,33 @@ const LaserTattooRemoval = () => {
     {
       questions: [
         {
-          title: "CZY MOŻNA USUWAĆ TATUAŻ LATEM?",
+          title: "Czy można usuwać tatuaż latem?",
           description:
-            "Tak, pod warunkiem że skóra nie jest opalona i będzie odpowiednio chroniona przed słońcem po zabiegu — stosując filtr SPF 50.",
+            "Tak, pod warunkiem że skóra nie jest opalona i będzie odpowiednio chroniona przed słońcem po zabiegu — zalecany filtr SPF 50.",
         },
         {
-          title: "ILE ZABIEGÓW POTRZEBA?",
+          title: "Ile zabiegów potrzeba?",
           description:
-            "Liczba sesji zależy od koloru, głębokości i wieku tatuażu.\nStandardowo potrzeba 4-8 zabiegów, wykonywanych w odstępach 8-10 tygodni, aby skóra mogła się w pełni zregenerować.",
+            "Liczba sesji zależy od koloru, głębokości i wieku tatuażu.\nZazwyczaj potrzeba 4–8 zabiegów, wykonywanych w odstępach 8–10 tygodni, aby skóra mogła się w pełni zregenerować.",
         },
-      ],
-      images: [photo1, photo2],
-      imageAlt: "Efekty usuwania tatuażu",
-      reverse: true,
-    },
-    {
-      questions: [
         {
-          title: "JAKIE SĄ PRZECIWWSKAZANIA DO ZABIEGU?",
-          description: "Zabieg nie jest wykonywany w następujących przypadkach:",
+          title: "Jakie są przeciwwskazania do zabiegu?",
           list: [
-            "ciąża i okres karmienia piersią,",
-            "aktywne infekcje skórne lub porażaj skóreczne,",
-            "aktywne infekcje skóry, opryszczka, stany zapalne,",
-            "nowotowory skóry (zwłaszcza w obrębie czb. barsetcza, XZS w fazie aktywnej),",
-            "niewyrówowana cukrzyca,",
-            "niewydolny, choroby autoimmunologiczne lub cukrzyca w starue nieuyrównuanym,",
-            "przyjmowanie leków światłouczulających (np. niektóre antybiotyki, retinoidy),",
-            "skłonności do przerostu lub retroidów lub kwasów w ostatnich tygodniach,",
-            "skłonności do powstawania blizowców.",
+            "Zabieg nie jest wykonywany w następujących przypadkach:",
+            "• ciąża i okres karmienia piersią,",
+            "• świeża opalenizna lub oparzenia słoneczne,",
+            "• aktywne infekcje skóry, opryszczka, stany zapalne,",
+            "• choroby skóry w miejscu zabiegu (np. łuszczyca, AZS w fazie aktywnej),",
+            "• nowotwory, choroby autoimmunologiczne lub cukrzyca w stanie niewyrównanym,",
+            "• przyjmowanie leków światłouczulających (np. niektóre antybiotyki, retinoidy),",
+            "• stosowanie preparatów z retinolem lub kwasami w ostatnich tygodniach,",
+            "• skłonność do powstawania bliznowców.",
           ],
         },
       ],
-      image: photo3,
-      imageAlt: "Przeciwwskazania do zabiegu",
-      reverse: false,
+      images: [photo2, photo3],
+      imageAlt: "Efekty usuwania tatuażu",
+      reverse: true,
     },
   ];
 
@@ -113,9 +106,11 @@ const LaserTattooRemoval = () => {
                       <h3 className="laser-tattoo-removal__question-title">
                         {question.title}
                       </h3>
-                      <p className="laser-tattoo-removal__question-description">
-                        {question.description}
-                      </p>
+                      {question.description && (
+                        <p className="laser-tattoo-removal__question-description">
+                          {question.description}
+                        </p>
+                      )}
                       {question.list && (
                         <ul className="laser-tattoo-removal__question-list">
                           {question.list.map((item, lIndex) => (
@@ -149,6 +144,7 @@ const LaserTattooRemoval = () => {
           </section>
         ))}
       </main>
+      <PortfolioSection />
       <Footer />
     </div>
   );
