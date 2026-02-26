@@ -3,65 +3,77 @@ import Footer from "@/widgets/footer";
 import { Button } from "@/shared/ui/Button";
 import CabinetSection from "./CabinetSection";
 import PortfolioSection from "./PortfolioSection";
-import "./LaserTattooRemoval.scss";
-import logo from "@/shared/assets/images/laser-tattoo-removal/reline.svg";
-import photo1 from "@/shared/assets/images/laser-tattoo-removal/Photo1.jpg";
-import photo2 from "@/shared/assets/images/laser-tattoo-removal/Photo2.jpg";
-import photo3 from "@/shared/assets/images/laser-tattoo-removal/Photo3.jpg";
+import "./LaserMakiPerm.scss";
+import logo from "@/shared/assets/images/laser-makijaz-permanent/reline.svg";
+import photo1 from "@/shared/assets/images/laser-makijaz-permanent/Photo1.jpg";
+import photo2 from "@/shared/assets/images/laser-makijaz-permanent/Photo2.jpg";
+import photo3 from "@/shared/assets/images/laser-makijaz-permanent/Photo3.jpg";
 
-const LaserTattooRemoval = () => {
+const LaserMakiPerm = () => {
   const sectionsData = [
     {
       questions: [
         {
+          title: "Jak wygląda zabieg?",
+          description:
+            "Podczas zabiegu laser precyzyjnie rozbija pigment w skórze na mikroskopijne cząsteczki.\nOrganizm następnie stopniowo usuwa je w naturalny sposób poprzez proces metaboliczny.\nCała procedura trwa bardzo krótko — usuwanie pigmentu na jednej brwi zajmuje zwykle około 10–15 sekund.",
+        },
+        {
           title: "Czy zabieg jest bolesny?",
           description:
-            "Odczucia są indywidualne, jednak dzięki zastosowaniu systemu chłodzenia skóry CRYO ból jest znacznie zredukowany.\nWiększość osób porównuje go do lekkiego uczucia pieczenia lub ukłuć.",
+            "Zabieg jest dobrze tolerowany.\nDzięki zastosowaniu chłodzenia CRYO, odczucia są minimalne — większość osób opisuje je jako lekkie ciepło lub delikatne ukłucia.",
         },
         {
-          title: "Czy po zabiegu zostają blizny?",
+          title: "Czy po zabiegu mogą zostać blizny lub przebarwienia?",
           description:
-            "Nie. Laser działa selektywnie na pigment, nie narusza naskórka i nie wpływa na otaczające tkanki.\nSkóra po zabiegu może być lekko zaczerwieniona lub opuchnięta, ale to naturalna reakcja, która ustępuje po kilku godzinach.",
-        },
-        {
-          title: "Jak przygotować się do zabiegu?",
-          description:
-            "Nie należy opalać skóry ani stosować samoopalaczy przez minimum 2 tygodnie przed zabiegiem.\nSkóra powinna być czysta, sucha i niepodrażniona.\nW dniu zabiegu nie należy nakładać kremów ani kosmetyków w miejscu tatuażu.",
-        },
-      ],
-      image: photo1,
-      imageAlt: "Proces laserowego usuwania tatuażu",
-      reverse: false,
-    },
-    {
-      questions: [
-        {
-          title: "Czy można usuwać tatuaż latem?",
-          description:
-            "Tak, pod warunkiem że skóra nie jest opalona i będzie odpowiednio chroniona przed słońcem po zabiegu — zalecany filtr SPF 50.",
+            "Nie. Laser działa bardzo precyzyjnie, nie narusza naskórka i nie powoduje uszkodzenia tkanek.\nW pierwszych godzinach po zabiegu skóra może być lekko zaczerwieniona lub opuchnięta — to naturalna reakcja, która szybko ustępuje.",
         },
         {
           title: "Ile zabiegów potrzeba?",
           description:
-            "Liczba sesji zależy od koloru, głębokości i wieku tatuażu.\nZazwyczaj potrzeba 4–8 zabiegów, wykonywanych w odstępach 8–10 tygodni, aby skóra mogła się w pełni zregenerować.",
+            "Liczba sesji zależy od rodzaju i intensywności pigmentu.\nZazwyczaj potrzeba 2–4 zabiegów, wykonywanych w odstępach 6–8 tygodni, aby skóra mogła się zregenerować.",
+        },
+      ],
+      image: photo1,
+      imageAlt: "Proces laserowego usuwania makijażu permanentnego",
+      reverse: false,
+    },
+    {
+      questions: [
+
+        {
+          title: "Jak przygotować się do zabiegu?",
+          list: [
+            "• Nie opalać skóry ani nie stosować samoopalaczy przez 2 tygodnie przed zabiegiem.",
+            "• Skóra powinna być czysta, sucha i bez podrażnień.",
+            "• W dniu zabiegu nie nakładać makijażu ani kremów w miejscu pigmentacji.",
+            "• Nie stosować wcześniej kremów z retinolem lub kwasami w obrębie zabiegu.",
+            "• Uwaga: po laminacji brwi należy odczekać minimum 3 tygodnie przed zabiegiem laserowego usuwania pigmentu.",
+          ],
+        },
+        {
+          title: "Czy po usunięciu można wykonać nowy makijaż permanentny?",
+          description:
+            "Tak, ale dopiero po pełnym wygojeniu skóry — zwykle po 6–8 tygodniach.",
         },
         {
           title: "Jakie są przeciwwskazania do zabiegu?",
           list: [
-            "Zabieg nie jest wykonywany w następujących przypadkach:",
-            "• ciąża i okres karmienia piersią,",
-            "• świeża opalenizna lub oparzenia słoneczne,",
-            "• aktywne infekcje skóry, opryszczka, stany zapalne,",
-            "• choroby skóry w miejscu zabiegu (np. łuszczyca, AZS w fazie aktywnej),",
-            "• nowotwory, choroby autoimmunologiczne lub cukrzyca w stanie niewyrównanym,",
-            "• przyjmowanie leków światłouczulających (np. niektóre antybiotyki, retinoidy),",
-            "• stosowanie preparatów z retinolem lub kwasami w ostatnich tygodniach,",
-            "• skłonność do powstawania bliznowców.",
+            "Zabieg nie jest wykonywany w przypadku:",
+            "• ciąży i okresu karmienia piersią,",
+            "• świeżej opalenizny lub podrażnionej skóry,",
+            "• aktywnych infekcji lub stanów zapalnych skóry,",
+            "• opryszczki w miejscu zabiegu,",
+            "• chorób skóry (np. łuszczyca, egzema w fazie aktywnej),",
+            "• chorób nowotworowych lub autoimmunologicznych,",
+            "• przyjmowania leków światłouczulających (np. niektóre antybiotyki, retinoidy),",
+            "• cukrzycy w stanie niewyrównanym,",
+            "• skłonności do bliznowców.",
           ],
         },
       ],
       images: [photo2, photo3],
-      imageAlt: "Efekty usuwania tatuażu",
+      imageAlt: "Efekty usuwania makijażu permanentnego",
       reverse: true,
     },
   ];
@@ -74,14 +86,14 @@ const LaserTattooRemoval = () => {
         <section className="laser-tattoo-removal__hero">
           <div className="container">
             <h1 className="laser-tattoo-removal__title">
-              Laserowe usuwanie tatuażu
+              Laserowe usuwanie makijażu permanentnego
             </h1>
             <p className="laser-tattoo-removal__subtitle">
-              Dla osób, które chcą pozbyć się niechcianego tatuażu w bezpieczny i skuteczny sposób.
+              Zabieg przeznaczony jest dla osób, które chcą bezpiecznie i skutecznie pozbyć się makijażu permanentnego lub przygotować skórę do nowej pigmentacji.
             </p>
             <p className="laser-tattoo-removal__description">
-              Nowoczesna technologia laserowa pozwala usunąć pigment niezależnie od jego koloru czy głębokości- w skórze.<br />
-              Podczas zabiegu stosowany jest system chłodzenia skóry CRYO, który redukuje ból i zwiększa komfort.
+              Laser usuwa pigment z brwi nie wpływając na cebulki włosowe ani strukturę skóry.<br />
+              Podczas zabiegu wykorzystywany jest system chłodzenia skóry CRYO, który redukuje ból i zapewnia maksymalny komfort.
             </p>
             <Button className="laser-tattoo-removal__cta">Zapisać się!</Button>
           </div>
@@ -152,4 +164,4 @@ const LaserTattooRemoval = () => {
   );
 };
 
-export default LaserTattooRemoval;
+export default LaserMakiPerm;

@@ -3,65 +3,77 @@ import Footer from "@/widgets/footer";
 import { Button } from "@/shared/ui/Button";
 import CabinetSection from "./CabinetSection";
 import PortfolioSection from "./PortfolioSection";
-import "./LaserTattooRemoval.scss";
-import logo from "@/shared/assets/images/laser-tattoo-removal/reline.svg";
-import photo1 from "@/shared/assets/images/laser-tattoo-removal/Photo1.jpg";
-import photo2 from "@/shared/assets/images/laser-tattoo-removal/Photo2.jpg";
-import photo3 from "@/shared/assets/images/laser-tattoo-removal/Photo3.jpg";
+import "./LaserMakiPerm.scss";
+import logo from "@/shared/assets/images/laser-makijaz-remover/reline.svg";
+import photo1 from "@/shared/assets/images/laser-makijaz-remover/Photo1.jpg";
+import photo2 from "@/shared/assets/images/laser-makijaz-remover/Photo2.jpg";
+import photo3 from "@/shared/assets/images/laser-makijaz-remover/Photo3.jpg";
 
-const LaserTattooRemoval = () => {
+const LaserMakiPerm = () => {
   const sectionsData = [
     {
       questions: [
         {
+          title: "Jak wygląda zabieg?",
+          description:
+            "Preparat jest aplikowany bardzo precyzyjnie w warstwę skóry, gdzie znajduje się pigment.\nW kolejnych dniach pigment stopniowo „podchodzi” ku powierzchni skóry i zostaje usunięty w procesie regeneracji naskórka.",
+        },
+        {
           title: "Czy zabieg jest bolesny?",
           description:
-            "Odczucia są indywidualne, jednak dzięki zastosowaniu systemu chłodzenia skóry CRYO ból jest znacznie zredukowany.\nWiększość osób porównuje go do lekkiego uczucia pieczenia lub ukłuć.",
+            "Zazwyczaj nie.\nMoże wystąpić lekkie uczucie pieczenia lub napięcia skóry, które ustępuje po kilku godzinach.",
         },
         {
-          title: "Czy po zabiegu zostają blizny?",
+          title: "Czy po removerze pozostają ślady?",
           description:
-            "Nie. Laser działa selektywnie na pigment, nie narusza naskórka i nie wpływa na otaczające tkanki.\nSkóra po zabiegu może być lekko zaczerwieniona lub opuchnięta, ale to naturalna reakcja, która ustępuje po kilku godzinach.",
+            "Po zabiegu może pojawić się lekkie zaczerwienienie lub drobne strupki – to naturalna reakcja skóry.\nPo całkowitym wygojeniu skóra odzyskuje naturalny koloryt, bez blizn i przebarwień.",
         },
         {
-          title: "Jak przygotować się do zabiegu?",
+          title: "Ile zabiegów potrzeba?",
           description:
-            "Nie należy opalać skóry ani stosować samoopalaczy przez minimum 2 tygodnie przed zabiegiem.\nSkóra powinna być czysta, sucha i niepodrażniona.\nW dniu zabiegu nie należy nakładać kremów ani kosmetyków w miejscu tatuażu.",
+            "Zazwyczaj wystarcza 1–4 sesje, w zależności od głębokości pigmentu i jego koloru.\nZabiegi wykonuje się w odstępach 6–8 tygodni.",
         },
       ],
       image: photo1,
-      imageAlt: "Proces laserowego usuwania tatuażu",
+      imageAlt: "Proces usuwania makijażu permanentnego removerem",
       reverse: false,
     },
     {
       questions: [
         {
-          title: "Czy można usuwać tatuaż latem?",
-          description:
-            "Tak, pod warunkiem że skóra nie jest opalona i będzie odpowiednio chroniona przed słońcem po zabiegu — zalecany filtr SPF 50.",
+          title: "Jak przygotować się do zabiegu?",
+          list: [
+            "• Skóra powinna być zdrowa, sucha i niepodrażniona.",
+            "• Nie stosować retinolu, kwasów ani silnych peelingów przez minimum tydzień przed zabiegiem.",
+            "• Po laminacji brwi należy odczekać minimum 3 tygodnie.",
+            "• W dniu zabiegu nie nakładać makijażu ani kremów w miejscu pigmentacji.",
+          ],
         },
         {
-          title: "Ile zabiegów potrzeba?",
-          description:
-            "Liczba sesji zależy od koloru, głębokości i wieku tatuażu.\nZazwyczaj potrzeba 4–8 zabiegów, wykonywanych w odstępach 8–10 tygodni, aby skóra mogła się w pełni zregenerować.",
+          title: "Jak dbać o skórę po zabiegu?",
+          list: [
+            "• Nie dotykać i nie moczyć miejsca po zabiegu przez pierwsze dni.",
+            "• Nie usuwać samodzielnie strupków – powinny odpaść naturalnie.",
+            "• Stosować preparaty łagodzące i regenerujące zgodnie z zaleceniami specjalisty.",
+            "• Chronić skórę przed słońcem i stosować filtr SPF 50.",
+          ],
         },
         {
           title: "Jakie są przeciwwskazania do zabiegu?",
           list: [
-            "Zabieg nie jest wykonywany w następujących przypadkach:",
             "• ciąża i okres karmienia piersią,",
-            "• świeża opalenizna lub oparzenia słoneczne,",
-            "• aktywne infekcje skóry, opryszczka, stany zapalne,",
-            "• choroby skóry w miejscu zabiegu (np. łuszczyca, AZS w fazie aktywnej),",
-            "• nowotwory, choroby autoimmunologiczne lub cukrzyca w stanie niewyrównanym,",
-            "• przyjmowanie leków światłouczulających (np. niektóre antybiotyki, retinoidy),",
-            "• stosowanie preparatów z retinolem lub kwasami w ostatnich tygodniach,",
+            "• świeża opalenizna lub podrażnienia skóry,",
+            "• aktywne infekcje, opryszczka lub stany zapalne,",
+            "• choroby skóry (np. łuszczyca, egzema w fazie aktywnej),",
+            "• nowotwory, choroby autoimmunologiczne,",
+            "• przyjmowanie antybiotyków lub leków przeciwzapalnych,",
+            "• cukrzyca w stanie niewyrównanym,",
             "• skłonność do powstawania bliznowców.",
           ],
         },
       ],
       images: [photo2, photo3],
-      imageAlt: "Efekty usuwania tatuażu",
+      imageAlt: "Efekty usuwania makijażu permanentnego removerem",
       reverse: true,
     },
   ];
@@ -74,14 +86,14 @@ const LaserTattooRemoval = () => {
         <section className="laser-tattoo-removal__hero">
           <div className="container">
             <h1 className="laser-tattoo-removal__title">
-              Laserowe usuwanie tatuażu
+              Usuwanie makijażu permanentnego removerem
             </h1>
             <p className="laser-tattoo-removal__subtitle">
-              Dla osób, które chcą pozbyć się niechcianego tatuażu w bezpieczny i skuteczny sposób.
+              Zabieg przeznaczony dla osób, u których pigment po makijażu permanentnym przybrał trudny do usunięcia odcień, np. zielony, żółty, szary lub niebieskawy odcień.
             </p>
             <p className="laser-tattoo-removal__description">
-              Nowoczesna technologia laserowa pozwala usunąć pigment niezależnie od jego koloru czy głębokości- w skórze.<br />
-              Podczas zabiegu stosowany jest system chłodzenia skóry CRYO, który redukuje ból i zwiększa komfort.
+              Remover to alternatywa dla lasera – stosowany w przypadkach, gdy pigment jest odporny na działanie światła lub został osadzony zbyt głęboko.<br />
+              Preparat działa miejscowo w warstwie skóry, w której znajduje się pigment. Składniki aktywne powodują reakcję chemiczną, która osłabia wiązania cząsteczek pigmentu.
             </p>
             <Button className="laser-tattoo-removal__cta">Zapisać się!</Button>
           </div>
@@ -152,4 +164,4 @@ const LaserTattooRemoval = () => {
   );
 };
 
-export default LaserTattooRemoval;
+export default LaserMakiPerm;

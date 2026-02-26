@@ -45,19 +45,19 @@ export const Header2 = () => {
             </button>
             {isDropdownOpen && (
               <div className="header2__dropdown-menu header2__dropdown-menu--down">
-                <a href="#" className="header2__dropdown-item">
+                <Link to="/laser-makijaz-remover" className="header2__dropdown-item">
                   USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
-                </a>
-                <a href="#" className="header2__dropdown-item">
+                </Link>
+                <Link to="/laser-makijaz-permanent" className="header2__dropdown-item">
                   LASEROWE USUWANIE MAKIJAŻU PERMANENTNEGO
-                </a>
+                </Link>
                 <Link to="/laser-tattoo-removal" className="header2__dropdown-item">
                   LASEROWE USUWANIE TATUAŻU
                 </Link>
               </div>
             )}
           </div>
-          <a href="#">KONTAKT</a>
+          <Link to="/contact">KONTAKT</Link>
           <a href="#">BOOKSY</a>
         </nav>
       </div>
