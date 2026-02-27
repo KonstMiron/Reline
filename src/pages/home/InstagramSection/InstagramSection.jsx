@@ -1,6 +1,6 @@
 import "./InstagramSection.scss";
 import phonesImg from "@/shared/assets/images/instagram-phones.png";
-import { Button } from "@/shared/ui/Button";
+import { Button2 } from "@/shared/ui/Button2";
 import instIcon from "@/shared/assets/images/inst_icon.svg";
 
 const InstagramSection = () => {
@@ -19,14 +19,14 @@ const InstagramSection = () => {
             alt="Podgląd Instagram RE LINE"
           />
         </div>
-        <Button 
+        <Button2 
           href="https://instagram.com/reline_lublin"
           target="_blank"
           className="instagram__button"
           icon={<img src={instIcon} alt="Instagram" />}
         >
           Zobacz na Instagramie
-        </Button>
+        </Button2>
       </div>
     </section>
   );

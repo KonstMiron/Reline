@@ -2,7 +2,7 @@ import "./LaserSection.scss";
 import leftImg from "@/shared/assets/images/laser-left.jpg";
 import rightImg from "@/shared/assets/images/laser-right.jpg";
 import map from "@/shared/assets/images/map.svg";
-import { Button } from "@/shared/ui/Button";
+import { Button2 } from "@/shared/ui/Button2";
 export const LaserSection = () => {
   return (
     <section className="laser">
@@ -40,9 +40,9 @@ export const LaserSection = () => {
         </div>
 
         <div className="laser__cta">
-          <Button onClick={() => console.log("clicked")}>
+          <Button2 onClick={() => console.log("clicked")}>
             SPRAWDŹ NASZĄ OFERTĘ !
-          </Button>
+          </Button2>
         </div>
       </div>
     </section>

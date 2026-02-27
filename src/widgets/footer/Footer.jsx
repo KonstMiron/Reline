@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import logoHeader from "@/shared/assets/images/logo-header.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -27,10 +28,10 @@ export const Footer = () => {
               <h3 className="footer__nav-title">MENU</h3>
               <ul className="footer__nav-list">
                 <li>
-                  <a href="#cennik">Cennik</a>
+                  <Link to="/#cennik">Cennik</Link>
                 </li>
                 <li>
-                  <a href="#kontakt">Kontakt</a>
+                  <Link to="/contact">Kontakt</Link>
                 </li>
               </ul>
             </div>
@@ -39,13 +40,13 @@ export const Footer = () => {
               <h3 className="footer__nav-title">ZABIEGI</h3>
               <ul className="footer__nav-list">
                 <li>
-                  <a href="#laser-tattoo">Laserowe usuwanie tatuażu</a>
+                  <Link to="/laser-tattoo-removal">Laserowe usuwanie tatuażu</Link>
                 </li>
                 <li>
-                  <a href="#laser-pmu">Laserowe usuwanie PMU</a>
+                  <Link to="/laser-makijaz-permanent">Laserowe usuwanie PMU</Link>
                 </li>
                 <li>
-                  <a href="#pmu-remover">Usuwanie PMU removerem</a>
+                  <Link to="/laser-makijaz-remover">Usuwanie PMU removerem</Link>
                 </li>
               </ul>
             </div>

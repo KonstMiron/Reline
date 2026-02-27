@@ -11,7 +11,7 @@ import galleryImg9 from "@/shared/assets/images/gallery/9.png";
 import galleryImg10 from "@/shared/assets/images/gallery/10.png";
 import galleryImg11 from "@/shared/assets/images/gallery/11.png";
 import galleryImg12 from "@/shared/assets/images/gallery/12.png";
-import { Button } from "@/shared/ui/Button";
+import { Button2 } from "@/shared/ui/Button2";
 
 export const GallerySection = () => {
   const images = [
@@ -58,11 +58,11 @@ export const GallerySection = () => {
         </div>
         <div className="gallery__content">
             <h6 className="gallery__title">SPRAWDŹ DOSTĘPNE TERMINY</h6>
-            <Button onClick={() => console.log("clicked")}
+            <Button2 onClick={() => console.log("clicked")}
                 className="gallery__button"
             >
                 Zapisać się!
-            </Button>
+            </Button2>
         </div>
       </div>
     </section>
