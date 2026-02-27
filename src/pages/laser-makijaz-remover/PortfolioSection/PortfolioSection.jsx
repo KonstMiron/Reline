@@ -2,9 +2,9 @@ import "./PortfolioSection.scss";
 import { Button } from "@/shared/ui/Button";
 import instIcon from "@/shared/assets/images/inst_icon.svg";
 import logo from "@/shared/assets/images/laser-makijaz-remover/reline.svg";
-import video1 from "@/shared/assets/images/laser-makijaz-remover/portfolio1.mp4";
-import video2 from "@/shared/assets/images/laser-makijaz-remover/portfolio2.mp4";
-import video3 from "@/shared/assets/images/laser-makijaz-remover/portfolio3.mp4";
+import video1 from "@/shared/assets/images/laser-tattoo-removal/portfolio1.mp4";
+import video2 from "@/shared/assets/images/laser-tattoo-removal/portfolio2.mp4";
+import video3 from "@/shared/assets/images/laser-tattoo-removal/portfolio3.mp4";
 
 const PortfolioSection = () => {
   return (
@@ -24,17 +24,17 @@ const PortfolioSection = () => {
 
         <div className="portfolio-section__gallery">
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video1} type="video/mp4" />
             </video>
           </div>
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video2} type="video/mp4" />
             </video>
           </div>
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video3} type="video/mp4" />
             </video>
           </div>

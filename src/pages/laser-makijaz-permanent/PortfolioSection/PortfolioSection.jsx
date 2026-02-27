@@ -24,17 +24,17 @@ const PortfolioSection = () => {
 
         <div className="portfolio-section__gallery">
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video1} type="video/mp4" />
             </video>
           </div>
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video2} type="video/mp4" />
             </video>
           </div>
           <div className="portfolio-section__gallery-item">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline preload="metadata" loading="lazy">
               <source src={video3} type="video/mp4" />
             </video>
           </div>
