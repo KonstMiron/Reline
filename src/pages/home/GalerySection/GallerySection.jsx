@@ -30,18 +30,19 @@ export const GallerySection = () => {
   ];
 
   const links = [
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
-    "#",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
+    "https://www.instagram.com/reline.studio.lbn/",
   ];
 
   return (

@@ -15,85 +15,55 @@
   }
 
   &__kicker {
-    font-size: 20px;
+    font-family: "Cinzel", serif;
+    font-size: 22px;
     letter-spacing: 1.2px;
     margin-bottom: 2px; 
   }
 
   &__lead {
-    font-size: 25px;
+    font-family: "Cinzel", serif;
+    font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 2px;
   }
 
   &__title {
-    font-family: "Playfair Display", serif;
+    font-family: "Cinzel", serif;
     font-size: clamp(64px, 10vw, 110px);
     letter-spacing: 4px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 40px;
     margin-top: 0;
   }
 
   &__media {
+    transform: translateY(-110px);
     display: flex;
     justify-content: center;
-    margin-bottom: 48px;
   }
 
   &__phones {
     width: 100%;
-    max-width: 760px;
+    max-width: 930px;
     height: auto;
     filter:
       drop-shadow(0 30px 60px rgba(0, 0, 0, 0.85))
       drop-shadow(0 0 40px rgba(255, 255, 255, 0.05));
   }
 
-  &__btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+  &__button.btn2 {
+    letter-spacing: normal;
+    max-width: 480px;
+    min-width: 480px;
+    height: 100px;
+    padding: 0 40px;
+    transform: translateY(-80px);
 
-    padding: 18px 80px;
-    border-radius: 999px;
-    border: 1px solid #fff;
-
-    background: #111111;
-    color: #fff;
-
-    font-family: "Cinzel", serif;
-    font-size: 20px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background: #ffffff;
-      color: #000000;
-      transform: translateY(-2px);
+    .btn2__icon img {
+      width: 28px;
+      height: 28px;
     }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 900px;
-    height: 400px;
-    transform: translateX(-50%);
-    background: radial-gradient(
-      ellipse at center,
-      rgba(255,255,255,0.08) 0%,
-      rgba(255,255,255,0.02) 35%,
-      transparent 70%
-    );
-    z-index: 1;
-    pointer-events: none;
   }
 }
 

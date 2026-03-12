@@ -7,7 +7,7 @@ import iconInst from "@/shared/assets/images/contact/icon-inst.svg";
 import iconTel from "@/shared/assets/images/contact/icon-tel.svg";
 import contactLine from "@/shared/assets/images/contact/line.svg";
 import "./Contact.scss";
-
+ 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -182,9 +182,7 @@ const Contact = () => {
             <div className="contact__quote-content">
               <img src={logoHeader} alt="R'LINE" className="contact__quote-logo" />
               <p className="contact__quote-text">
-                „Z nami każdy krok jest prosty i bezpieczny. Napisz lub zadzwoń, aby 
-                uzyskać pełną informację o zabiegach usuwania tatuaży i rozpocząć nowy 
-                rozdział dla swojej skóry."
+                „Z nami każdy krok jest prosty i bezpieczny. Napisz lub <br /> zadzwoń, aby uzyskać pełną informację o zabiegach usuwania <br />tatuaży.”
               </p>
               <p className="contact__quote-tagline">
                 Twoja skóra. Twój wybór.

@@ -10,19 +10,19 @@ export const AboutSection = () => {
                 <span className="layer layer--shadow">SKIN & INK</span>
                 <span className="layer layer--main">SKIN & INK</span>
             </div>
-
+ 
         </div>
       <div className="about__top-arc" />
 
       <div className="container about__inner">
        <div className="about__studio title-layered">
-        <span className="layer layer--shadow">STUDIO</span>
-        <span className="layer layer--main">STUDIO</span>
+        <span className="layer layer--shadow layer--studio">STUDIO</span>
+        <span className="layer layer--main layer--studio">STUDIO</span>
       </div> 
 
         <div className="about__content">
           <div className="about__text about__text--left">
-            <p className="about__text-weight">
+            <p >
               Nazywam się <span className="about__name">ANASTASZJA</span> <br /> i jestem właścicielką studia
               <span className="about__name"> RE LINE</span> <br /> w Lublinie.
             </p>

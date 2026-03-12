@@ -27,7 +27,7 @@
   }
 
   &__logo {
-    width: 150px; 
+    width: 100px; 
     height: auto;
 
     img {
@@ -55,7 +55,7 @@
       transition: 0.2s;
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 50px;
 
       &:hover {
         opacity: 0.6;

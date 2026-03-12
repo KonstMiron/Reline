@@ -50,7 +50,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     align-items: center;
     z-index: 4;
@@ -58,20 +58,22 @@
 
   &__text {
     font-family: "Lora", serif;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+
 
     p + p {
       margin-top: 50px;
     }
   }
   &__text--left {
-    transform: translateY(50px); 
+    transform: translate(50px, 50px);
+    width: 379px;
   }
   &__name {
     font-family: "Cinzel", serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
+    line-height: 120%;
   }
   &__text-weight{
     font-weight: 600;
@@ -92,8 +94,16 @@
   }
    &__button {
     margin-top: 40px;
-  }
 
+
+  }
+      .btn {
+      letter-spacing: normal;
+      width: 396px;
+      height: 85px;
+      padding: 0 40px;
+      transform: translateX(-23px);
+    }
 }
 
 .title-layered {
@@ -104,10 +114,10 @@
 .layer {
   font-family: "Cinzel", serif;
   font-size: 200px;   
-  letter-spacing: 0.12em;
+  letter-spacing: 0em;
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: -15px;
+  left: 170px;
   white-space: nowrap;
 
 }
@@ -116,6 +126,9 @@
   color: #fff;
   transform: translate(2px, -4px);
 
+}
+.layer--studio {
+  top: -70px;
 }
 /* Верхній текст */
 .layer--main {

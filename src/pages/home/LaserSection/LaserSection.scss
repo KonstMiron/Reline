@@ -1,5 +1,5 @@
 .laser {
-  padding: 80px 0 300px;
+  padding: 80px 0 150px;
   background: var(--bg-color);
   color: var(--text-color);
 
@@ -8,34 +8,38 @@
   }
 
   &__header {
+    max-width: 1000px;
     margin-bottom: 20px;
+    transform: translateX(330px);
   }
 
   &__title {
+    letter-spacing: 0;
     font-family: "Cinzel", serif;
-    font-size: 64px;
-    letter-spacing: 0.1em;
+    font-size: 76px;
+    line-height: 120%;
     margin: 0 0 16px;
     font-weight: 400;
   }
 
   &__subtitle {
     font-family: "Lora", serif;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 0 16px;
     font-weight: 400;
   }
 
   &__location {
+    font-family: "Cinzel", serif;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
+    font-size: 30px;
     margin-top: 8px;
 
     img{
-      width: 16px;
-      height: 16px;
+      width: 19px;
+      height: 26px;
     }
   }
 
@@ -48,12 +52,10 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
     align-items: center;
-    gap: 40px;
+    gap: 64px;
   }
 
   &__image {
-    width: 320px;
-    height: 420px;
     margin: 0 auto;
     border-radius: 500px;
     overflow: hidden;
@@ -65,25 +67,39 @@
     }
 
     &--left {
-        transform: translateY(-100px); 
+        transform: translateY(-100px);
+        width: 410px;
+        height: 580px;
     }
 
     &--right {
-        transform: translateY(100px); 
+        transform: translateY(50px);
+        width: 294px;
+        height: 404px;
     }
 
   }
 
   &__text {
+    max-width: 446px;
+    font-family: "Lora", serif;
+    transform: translateY(-130px);
     text-align: left;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
   }
 
   &__cta {
-    margin-top: 60px;
+    max-width: 460px;
     display: flex;
     justify-content: center;
+    transform: translate(550px, -100px);
+
+    .btn2 {
+      letter-spacing: normal;
+      width: 460px;
+      height: 85px;
+      padding: 0 40px;
+    }
   }
 }
 

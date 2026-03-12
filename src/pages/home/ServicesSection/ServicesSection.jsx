@@ -10,7 +10,7 @@ const ServicesSection = () => {
           Zmieńmy przyszłość <br />
           Pozwól sobie na nowy rozdział <br /> piękna.
         </h2>
-
+ 
         <p className="services__desc">Pozwól nam zadbać o Ciebie</p>
 
         {/* ВЕЛИКЕ СЛОВО ПІД ТЕКСТОМ */}

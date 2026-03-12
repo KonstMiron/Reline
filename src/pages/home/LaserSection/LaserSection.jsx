@@ -23,14 +23,9 @@ export const LaserSection = () => {
 
           <div className="laser__text">
             <p>
-              Precyzyjne i bezpieczne zabiegi wykonywane przy użyciu
-              nowoczesnego lasera. Podczas procedury wykorzystywany jest
-              system chłodzenia skóry CRYO, który redukuje ból i zwiększa
-              komfort zabiegu.
-            </p>
-            <p>
-              Usuwanie odbywa się bez naruszenia naskórka, bez uszkodzenia
-              otaczających tkanek i bez blizn.
+              Precyzyjne i bezpieczne zabiegi wykonywane przy użyciu nowoczesnego lasera. <br />
+Podczas procedury wykorzystywany jest system chłodzenia skóry CRYO, który redukuje ból i zwiększa komfort zabiegu. <br />
+Usuwanie odbywa się bez naruszenia naskórka, bez uszkodzenia otaczających tkanek i bez blizn.
             </p>
           </div>
 

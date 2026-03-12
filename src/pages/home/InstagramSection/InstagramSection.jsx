@@ -8,8 +8,8 @@ const InstagramSection = () => {
     <section className="instagram">
       <div className="container instagram__inner">
         <p className="instagram__kicker">Usuń przeszłość, podkreśl przyszłość.</p>
-        <p className="instagram__lead">RE LINE – miejsce, gdzie zaczyna się nowe.</p>
-
+        <p className="instagram__lead">Re Line – miejsce, gdzie zaczyna się nowe.</p>
+ 
         <h2 className="instagram__title">INSTAGRAM</h2>
 
         <div className="instagram__media">
@@ -20,7 +20,7 @@ const InstagramSection = () => {
           />
         </div>
         <Button2 
-          href="https://instagram.com/reline_lublin"
+          href="https://www.instagram.com/reline.studio.lbn/"
           target="_blank"
           className="instagram__button"
           icon={<img src={instIcon} alt="Instagram" />}
