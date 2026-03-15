@@ -187,3 +187,85 @@
     }
   }
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer {
+    padding: 42px 0 24px;
+  }
+
+  .footer__content {
+    gap: 28px;
+  }
+
+  .footer__main {
+    display: grid;
+    grid-template-columns: minmax(320px, 1.15fr) minmax(320px, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .footer__brand {
+    max-width: 430px;
+    gap: 20px;
+  }
+
+  .footer__logo img {
+    width: 145px;
+  }
+
+  .footer__address {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .footer__address p,
+  .footer__address a {
+    font-size: 17px;
+  }
+
+  .footer__address p:first-child {
+    margin-bottom: 18px;
+  }
+
+  .footer__tagline {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 420px;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 26px 0px;
+    align-content: start;
+  }
+
+  .footer__nav-column {
+    min-width: 0;
+    gap: 14px;
+  }
+
+  .footer__nav-column:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer__nav-title {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .footer__nav-list {
+    gap: 8px;
+  }
+
+  .footer__nav-list li a {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .footer__copyright {
+    font-size: 13px;
+    margin: 0;
+  }
+}

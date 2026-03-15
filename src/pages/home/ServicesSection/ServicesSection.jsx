@@ -8,7 +8,7 @@ const ServicesSection = () => {
 
         <h2 className="services__title">
           Zmieńmy przyszłość <br />
-          Pozwól sobie na nowy rozdział <br /> piękna.
+          Pozwól sobie na nowy rozdział <br className="br" /> piękna.
         </h2>
  
         <p className="services__desc">Pozwól nam zadbać o Ciebie</p>
@@ -27,7 +27,7 @@ const ServicesSection = () => {
             alt="Laserowe usuwanie tatuażu"
           />
           </div>
-
+ 
           <h3>Laserowe usuwanie tatuażu</h3>
           <p>
             Usuń tatuaż laserem pikosekundowym z chłodzeniem Cryo – bez bólu i bez ryzyka!
