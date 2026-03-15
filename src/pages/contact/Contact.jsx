@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header2 from "@/widgets/header2";
+import HeaderSwitcher from "@/widgets/header-switcher";
 import Footer from "@/widgets/footer";
 import logoHeader from "@/shared/assets/images/contact/reline.svg";
 import iconMap from "@/shared/assets/images/contact/icon-map.svg";
@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header2 />
+      <HeaderSwitcher variant="inner" />
       <div className="contact">
         <div className="container">
           <div className="contact__content">

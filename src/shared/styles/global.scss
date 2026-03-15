@@ -203,6 +203,12 @@ button {
   }
 }
 
+@media screen and (max-width: 1024px) and (min-width: 701px) {
+  .container {
+    padding: 0 73px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 0 calc(50vw - 220px);

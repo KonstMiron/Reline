@@ -1,0 +1,163 @@
+.header-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 30;
+
+
+  &__bar {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    width: 92px;
+    height: auto;
+    display: block;
+  }
+
+  &__toggle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: #1e1e1e;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      margin-left: auto;
+    }
+
+    &--open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &--open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &--open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  &__panel {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: #fff;
+    padding: 24px 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+
+    &--open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__panel-inner {
+    width: 100%;
+  }
+
+  &__panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__close {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      left: 7px;
+      top: 17px;
+      width: 22px;
+      height: 2px;
+      background: #fff;
+    }
+
+    span:first-child {
+      transform: rotate(45deg);
+    }
+
+    span:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    a,
+    button {
+      width: 100%;
+      text-align: left;
+      font-family: "Cinzel", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      color: #fff;
+      background: transparent;
+      border: none;
+      text-decoration: none;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+  }
+
+  &__accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    font-size: 20px;
+    line-height: 1;
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+
+    &--open {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__submenu {
+    display: grid;
+    gap: 8px;
+    margin: 8px 0 12px;
+
+    a {
+      font-family: "Lora", serif;
+      font-size: 15px;
+      line-height: 1.35;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+  }
+}

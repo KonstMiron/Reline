@@ -1,4 +1,4 @@
-import Header2 from "@/widgets/header2";
+import HeaderSwitcher from "@/widgets/header-switcher";
 import Footer from "@/widgets/footer";
 import { Button } from "@/shared/ui/Button";
 import CabinetSection from "./CabinetSection";
@@ -80,7 +80,7 @@ const LaserMakiPerm = () => {
 
   return (
     <div className="laser-tattoo-removal">
-      <Header2 />
+      <HeaderSwitcher variant="inner" />
       <main className="laser-tattoo-removal__content">
         {/* Hero Section */}
         <section className="laser-tattoo-removal__hero">
