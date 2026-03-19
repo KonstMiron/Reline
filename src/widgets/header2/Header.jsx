@@ -28,7 +28,7 @@ export const Header2 = () => {
       <div className="container header2__content">
         <nav className="header2__nav header2__nav--left">
           <Link to="/">STRONA GŁÓWNA</Link>
-          <a href="#">CENNIK</a>
+          <Link to="/cennik">CENNIK</Link>
         </nav>
 
         <Link to="/" className="header2__logo">

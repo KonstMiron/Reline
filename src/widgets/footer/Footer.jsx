@@ -28,7 +28,7 @@ export const Footer = () => {
               <h3 className="footer__nav-title">MENU</h3>
               <ul className="footer__nav-list">
                 <li>
-                  <Link to="/#cennik">Cennik</Link>
+                  <Link to="/cennik">Cennik</Link>
                 </li>
                 <li>
                   <Link to="/contact">Kontakt</Link>

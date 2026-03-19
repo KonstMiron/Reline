@@ -57,7 +57,7 @@ const HeaderMobile = ({ showBooksy = false }) => {
 
           <nav className="header-mobile__nav">
             <Link to="/" onClick={closeMenu}>STRONA GLOWNA</Link>
-            <a href="#" onClick={closeMenu}>CENNIK</a>
+            <Link to="/cennik" onClick={closeMenu}>CENNIK</Link>
 
             <button className="header-mobile__accordion" onClick={toggleTreatments}>
               ZABIEGI

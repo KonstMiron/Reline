@@ -45,7 +45,7 @@ export const Header = () => {
       <div className="container header__content">
         <nav className="header__nav header__nav--left">
           <Link to="/">STRONA GŁÓWNA</Link>
-          <a href="#">CENNIK</a>
+          <Link to="/cennik">CENNIK</Link>
         </nav>
 
         <Link to="/" className="header__logo">
