@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
   }
-
+ 
   &__phones {
     width: 100%;
     max-width: 930px;
@@ -63,6 +63,52 @@
     .btn2__icon img {
       width: 28px;
       height: 28px;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 701px) {
+  .instagram {
+    &__media {
+      transform: translateY(-95px);
+    }
+
+    &__kicker {
+      font-size: 17px;
+    }
+
+    &__lead {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 76px;
+    }
+
+    &__phones {
+      width: 706px;
+      height: 415px;
+      max-width: none;
+      object-fit: contain;
+    }
+
+    &__button.btn2 {
+      margin-top: 20px;
+      width: 341px;
+      min-width: 341px;
+      max-width: 341px;
+      height: 60px;
+      padding: 0 24px;
+      font-size: 17px;
+
+      .btn2__text {
+        font-size: 17px;
+      }
+
+      .btn2__icon img {
+        width: 22px;
+        height: 20px;
+      }
     }
   }
 }

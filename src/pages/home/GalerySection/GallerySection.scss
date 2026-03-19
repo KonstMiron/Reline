@@ -21,7 +21,7 @@
         transform: scale(1.05);
       }
     }
-    }
+    } 
     &__content{
         display: flex;
         flex-direction: column;
@@ -43,9 +43,33 @@
         padding: 0 40px;
     }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (min-width: 701px) {
     &__grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 217px);
+      justify-content: center;
+    }
+
+    &__item img {
+      width: 217px;
+      height: 260px;
+      max-width: none;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__button.btn2 {
+      width: 190px;
+      min-width: 190px;
+      max-width: 190px;
+      height: 50px;
+      padding: 0 16px;
+      font-size: 17px;
+
+      .btn2__text {
+        font-size: 17px;
+      }
     }
   }
 

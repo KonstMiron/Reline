@@ -62,7 +62,7 @@ const Cennik = () => {
               Zapoznaj się z naszą ofertą cenową przygotowaną z myślą o przejrzystości i komforcie naszych klientów. Każda usługa została starannie opracowana, aby zapewnić najwyższą jakość oraz satysfakcję z efektów. <br className="br" />
                 Wierzymy, że profesjonalizm i dbałość o detale powinny iść w parze z uczciwą i zrozumiałą polityką cenową. Dzięki temu możesz łatwo wybrać usługę najlepiej <br /> dopasowaną do swoich potrzeb.
             </p>
-            <Button className="cennik-page__cta">ZAPISAC SIE!</Button>
+            <Button className="cennik-page__cta">Zapisać się!</Button>
           </div>
         </section>
 

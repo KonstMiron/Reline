@@ -208,7 +208,7 @@
     text-align: center;
     z-index: 2;
   }
-
+ 
   &__quote-logo {
     position: absolute;
     top: 92%;
@@ -272,27 +272,101 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
+    background: #D9D9D9;
+
     &__content {
-      padding: 80px 0 0;
+      padding: 40px 25px;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    &__info {
+      padding-top: 20px;
+      max-width: 100%;
     }
 
     &__title {
-      font-size: 36px;
+      font-size: 22px;
+      color: var(--color-black);
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 14px;
+      color: var(--color-black);
+      margin-bottom: 60px;
+      opacity: 0.6;
+    }
+
+    &__item {
+      font-size: 17px;
+      color: var(--color-black);
+
+      &:nth-child(3),
+      &:nth-child(5) {
+        margin-top: 40px;
+      }
+    }
+
+    &__line {
+      width: 100%;
+      display: none;
+    }
+
+    &__icon {
+      width: 24px !important;
+      height: 24px !important;
+    }
+
+    &__form-container {
+      padding-right: 0;
+      background: #000000;
+      padding: 25px;
+      margin: 0 -25px;
     }
 
     &__form-wrapper {
-      padding: 30px 20px;
+      padding: 40px 25px;
+      background: var(--color-white);
+      border: none;
     }
 
     &__form-title {
       font-size: 24px;
+      color: var(--color-black);
+      margin-bottom: 30px;
+    }
+
+    &__input,
+    &__textarea {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      color: var(--color-black);
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
+
+      &:focus {
+        border-bottom-color: var(--color-black);
+      }
     }
 
     &__submit {
-      width: 100%;
-      padding: 16px 40px;
-      font-size: 18px;
+      width: 128px;
+      height: 43px;
+      padding: 0;
+      background: var(--color-black);
+      color: var(--color-white);
+      font-size: 17px;
+      margin-top: 30px;
+
+      &:hover:not(:disabled) {
+        background: rgba(0, 0, 0, 0.9);
+        box-shadow: none;
+      }
     }
 
     &__map {
@@ -304,20 +378,23 @@
     }
 
     &__quote {
-      padding: 60px 20px;
+      background: #D9D9D9;
+      padding: 60px 25px;
       margin-top: 60px;
     }
 
     &__quote-logo {
-      width: 250px;
+      width: 200px;
     }
 
     &__quote-text {
-      font-size: 16px;
+      font-size: 14px;
+      color: var(--color-black);
     }
 
     &__quote-tagline {
-      font-size: 18px;
+      font-size: 17px;
+      color: var(--color-black);
     }
   }
 }

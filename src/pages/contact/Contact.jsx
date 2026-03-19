@@ -60,7 +60,7 @@ const Contact = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }; 
 
   return (
     <>

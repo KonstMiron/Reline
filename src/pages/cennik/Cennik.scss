@@ -62,7 +62,7 @@
 
   &__prices-list {
     display: grid;
-    gap: 100px;
+    gap: 80px;
   }
 
   &__bottom-cta {
@@ -98,7 +98,7 @@
     align-items: center;
 
     &--lower {
-      margin-top: 30px;
+      margin-top: 0;
     }
   }
 
@@ -143,7 +143,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 41px 154px 40px;
+    padding: 41px 100px 40px;
     box-sizing: border-box;
     font-family: "Lora", serif;
     font-size: 20px;
@@ -258,22 +258,22 @@
 @media (max-width: 700px) {
   .cennik-page {
     &__hero {
-      padding: 56px 0 42px;
+      padding: 130px 0 67px;
     }
 
     &__hero-watermark {
-      width: 380px;
-      top: 46px;
-      opacity: 0.15;
+      width: 250px;
+      top: -20px;
+      opacity: 0.2;
     }
 
     &__title {
-      font-size: 30px;
+      font-size: 22px;
       margin-bottom: 12px;
     }
 
     &__description {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.5;
       margin-bottom: 22px;
     }
@@ -286,11 +286,11 @@
     }
 
     &__prices {
-      padding: 42px 0 64px;
+      padding: 64px 0 64px;
     }
 
     &__prices-list {
-      gap: 46px;
+      gap: 80px;
     }
 
     &__bottom-cta {
@@ -299,30 +299,34 @@
     }
 
     &__bottom-cta-title {
-      font-size: 22px;
+      font-size: 17px;
     }
 
     &__bottom-cta-button.btn {
-      max-width: 280px;
-      width: 100%;
+      max-width: none;
+      width: 37%;
+      min-width: 120px;
       padding: 12px 20px;
-      font-size: 18px;
+      font-size: 14px;
     }
 
     &__service-copy h2 {
-      font-size: 22px;
+      font-size: 25px;
       margin-bottom: 14px;
+      text-align: center;
     }
 
     &__service-copy p {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.55;
+      text-align: center;
     }
 
     &__price-pill {
       min-height: 60px;
-      font-size: 20px;
+      font-size: 17px;
       padding: 8px 16px;
+      text-align: center;
 
       &::after {
         left: 10px;

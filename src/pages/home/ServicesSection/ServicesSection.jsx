@@ -9,7 +9,7 @@ const ServicesSection = () => {
         <h2 className="services__title">
           Zmieńmy przyszłość <br />
           Pozwól sobie na nowy rozdział <br className="br" /> piękna.
-        </h2>
+        </h2> 
  
         <p className="services__desc">Pozwól nam zadbać o Ciebie</p>
 
