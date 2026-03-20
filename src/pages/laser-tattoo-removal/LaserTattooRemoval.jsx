@@ -80,7 +80,7 @@ const LaserTattooRemoval = () => {
               Dla osób, które chcą pozbyć się niechcianego tatuażu w bezpieczny i skuteczny sposób.
             </p>
             <p className="laser-tattoo-removal__description">
-              Nowoczesna technologia laserowa pozwala usunąć pigment niezależnie od jego koloru czy głębokości- w skórze.<br />
+              Nowoczesna technologia laserowa pozwala usuwać pigment niezależnie od jego koloru czy głębokości w skórze.<br />
               Podczas zabiegu stosowany jest system chłodzenia skóry CRYO, który redukuje ból i zwiększa komfort.
             </p>
             <Button className="laser-tattoo-removal__cta">Zapisać się!</Button>

@@ -7,11 +7,6 @@
   overflow: hidden;
   padding: 100px 0;
 
-  @media (max-width: 768px) {
-    min-height: 400px;
-    padding: 80px 0;
-  }
-
   &__background {
     position: absolute;
     top: 0;
@@ -55,11 +50,6 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 32px;
-
-    @media (max-width: 768px) {
-      font-size: 48px;
-      margin-bottom: 24px;
-    }
   }
 
   &__description {
@@ -71,14 +61,39 @@
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-
-    @media (max-width: 768px) {
-      font-size: 15px;
-      margin-bottom: 32px;
-    }
   }
 
   &__button {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabinet-section {
+    min-height: 400px;
+    padding: 80px 0;
+
+    &__title {
+      font-size: 17px;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    &__button {
+      width: 175px;
+      height: 50px;
+      min-height: 50px;
+      font-size: 17px;
+      line-height: 1;
+      letter-spacing: 0;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

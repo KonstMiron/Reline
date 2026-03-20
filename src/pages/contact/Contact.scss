@@ -260,7 +260,7 @@
     }
 
     &__map {
-      margin-top: 60px;
+      margin-top: 0px;
       
       iframe {
         height: 400px;
@@ -276,7 +276,7 @@
     background: #D9D9D9;
 
     &__content {
-      padding: 40px 25px;
+      padding: 70px 0px 0px;
       grid-template-columns: 1fr;
       gap: 40px;
     }
@@ -311,7 +311,6 @@
 
     &__line {
       width: 100%;
-      display: none;
     }
 
     &__icon {
@@ -370,7 +369,7 @@
     }
 
     &__map {
-      margin-top: 40px;
+      margin-top: 0px;
       
       iframe {
         height: 300px;
@@ -380,20 +379,22 @@
     &__quote {
       background: #D9D9D9;
       padding: 60px 25px;
-      margin-top: 60px;
+      margin-top: 0px;
     }
 
     &__quote-logo {
-      width: 200px;
+      width: 266px;
     }
 
     &__quote-text {
       font-size: 14px;
+      font-family: "Lora", serif;
       color: var(--color-black);
     }
 
     &__quote-tagline {
-      font-size: 17px;
+      font-size: 14px;
+      font-family: "Cinzel", serif;
       color: var(--color-black);
     }
   }

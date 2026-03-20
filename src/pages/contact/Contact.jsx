@@ -96,7 +96,7 @@ const Contact = () => {
                 </div>
                 <img src={contactLine} alt="" className="contact__line" />
               </div>
-            </div>
+            </div> 
 
             <div className="contact__form-container">
               <div className="contact__form-wrapper">
