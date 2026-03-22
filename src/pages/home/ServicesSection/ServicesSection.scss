@@ -212,6 +212,10 @@
 }
 
 @media (max-width: 900px) {
+  .services__header {
+    margin-top: -1px;
+  }
+
   .services__list {
     grid-template-columns: 1fr;
     gap: 50px;

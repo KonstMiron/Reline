@@ -20,7 +20,7 @@ export const Hero = ({ hideTop = false }) => {
               </a>
             </div>
           </div>
-        )}
+        )} 
 
         {hideTop && (
           <div className="hero__tablet-brand" aria-hidden="true">
