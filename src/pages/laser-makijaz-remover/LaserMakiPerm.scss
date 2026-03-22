@@ -241,17 +241,18 @@
   }
 
   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:first-child {
-    width: 191px;
-    height: 288px;
-    top: 50px;
-    left: -40px;
+    width: 236px;
+    height: 392px;
+    border-radius: 118px / 112px;
+    top: -24px;
+    left: -48px;
   }
 
   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:last-child {
-    width: 146px;
-    height: 206px;
-    bottom: 0;
-    right: 0px;
+    width: 180px;
+    height: 256px;
+    bottom: -10px;
+    right: -50px;
   }
 
   .laser-tattoo-removal {
@@ -260,8 +261,8 @@
     }
 
     &__hero-logo {
-      width: 250px;
-      height: 50px;
+      width: 300px;
+      height: auto;
     }
 
     &__title {
@@ -272,11 +273,13 @@
 
     &__subtitle {
       font-size: 14px;
+      opacity: 0.6;
     }
 
     &__description {
       font-size: 14px;
       margin-bottom: 24px;
+      opacity: 0.6;
     }
 
     &__cta {
@@ -311,10 +314,12 @@
 
     &__question-description {
       font-size: 14px;
+      opacity: 0.6;
     }
 
     &__question-list {
       font-size: 15px;
+      opacity: 0.6;
     }
 
     &__image-wrapper {
