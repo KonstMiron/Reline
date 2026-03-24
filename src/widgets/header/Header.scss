@@ -32,11 +32,10 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-color);
-      background: none;
       border: none;
       text-decoration: none;
       cursor: pointer;  
-      transition: opacity 0.2s;
+      transition: background-color 0.2s ease, opacity 0.2s ease;
 
       &:hover {
         opacity: 0.6;
@@ -89,7 +88,7 @@
   }
 
   .header__dropdown-item {
-    background: #2E2D2D !important;
+    background: #2E2D2D;
     border-radius: 50px;
     display: flex;
     width: 316px;
@@ -106,7 +105,8 @@
     transition: all 0.2s ease;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.9);
+        background-color: #616161 !important;
+        opacity: 1 !important;
     }
   }
 

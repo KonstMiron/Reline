@@ -1,5 +1,5 @@
 import "./InstagramSection.scss";
-import phonesImg from "@/shared/assets/images/instagram-phones.png";
+import phonesImg from "@/shared/assets/images/instagram-phones.svg";
 import { Button2 } from "@/shared/ui/Button2";
 import instIcon from "@/shared/assets/images/inst_icon.svg";
  

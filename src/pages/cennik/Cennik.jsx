@@ -11,7 +11,16 @@ const priceSections = [
       "Podczas zabiegu wykorzystywany jest nowoczesny system chłodzenia skóry CRYO, który skutecznie zmniejsza odczuwalny dyskomfort i podnosi komfort całej procedury, nawet w przypadku większych lub intensywnie napigmentowanych tatuaży.",
     note:
       "Proces usuwania tatuażu przebiega etapowo i wymaga kilku sesji, co pozwala skórze na naturalną regenerację między zabiegami. Każdą terapię poprzedza konsultacja, podczas której specjalista dobiera odpowiednie parametry lasera oraz indywidualny plan zabiegowy dopasowany do rodzaju tatuażu i typu skóry.",
-    prices: ["do 3x3 - 200 zł", "do 4x6 - 230 zł"],
+    prices: [
+      {
+        label: "do 3x3 - 200 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+      {
+        label: "do 4x6 - 230 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+    ],
   },
   {
     title: "USUWANIE TATUAŻY ŚREDNICH",
@@ -19,7 +28,16 @@ const priceSections = [
       "Podczas zabiegu wykorzystywany jest nowoczesny system chłodzenia skóry CRYO, który skutecznie zmniejsza odczuwalny dyskomfort i podnosi komfort całej procedury, nawet w przypadku większych lub intensywnie napigmentowanych tatuaży.",
     note:
       "Proces usuwania tatuażu przebiega etapowo i wymaga kilku sesji, co pozwala skórze na naturalną regenerację między zabiegami. Każdą terapię poprzedza konsultacja, podczas której specjalista dobiera odpowiednie parametry lasera oraz indywidualny plan zabiegowy dopasowany do rodzaju tatuażu i typu skóry.",
-    prices: ["do 6x10 - 330 zł", "do 10x10 - 370 zł"],
+    prices: [
+      {
+        label: "do 6x10 - 330 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+      {
+        label: "do 10x10 - 370 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+    ],
   },
   {
     title: "USUWANIE TATUAŻY DUŻYCH",
@@ -27,7 +45,20 @@ const priceSections = [
       "Podczas zabiegu wykorzystywany jest nowoczesny system chłodzenia skóry CRYO, który skutecznie zmniejsza odczuwalny dyskomfort i podnosi komfort całej procedury, nawet w przypadku większych lub intensywnie napigmentowanych tatuaży.",
     note:
       "Proces usuwania tatuażu przebiega etapowo i wymaga kilku sesji, co pozwala skórze na naturalną regenerację między zabiegami. Każdą terapię poprzedza konsultacja, podczas której specjalista dobiera odpowiednie parametry lasera oraz indywidualny plan zabiegowy dopasowany do rodzaju tatuażu i typu skóry.",
-    prices: ["do 15x15 - 400 zł", "do 20x20 - 470 zł", "powyżej 20x20 - 550 zł +"],
+    prices: [
+      {
+        label: "do 15x15 - 400 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+      {
+        label: "do 20x20 - 470 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+      {
+        label: "powyżej 20x20 - 550 zł +",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+    ],
   },
   {
     title: "USUWANIE MAKIJAŻU PERMANENTNEGO",
@@ -35,7 +66,12 @@ const priceSections = [
       "Podczas zabiegu wykorzystywany jest nowoczesny system chłodzenia skóry CRYO, który skutecznie zmniejsza odczuwalny dyskomfort i podnosi komfort całej procedury, nawet w przypadku większych lub intensywnie napigmentowanych tatuaży.",
     note:
       "Proces usuwania tatuażu przebiega etapowo i wymaga kilku sesji, co pozwala skórze na naturalną regenerację między zabiegami. Każdą terapię poprzedza konsultacja, podczas której specjalista dobiera odpowiednie parametry lasera oraz indywidualny plan zabiegowy dopasowany do rodzaju tatuażu i typu skóry.",
-    prices: ["1 zabieg - 300 zł"],
+    prices: [
+      {
+        label: "1 zabieg - 300 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+    ],
   },
   {
     title: "USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM",
@@ -43,7 +79,12 @@ const priceSections = [
       "Usuwanie makijażu permanentnego removerem to zabieg polegający na stopniowym rozjaśnianiu lub całkowitym usunięciu pigmentu ze skóry. Specjalny preparat (remover) wprowadza się w skórę w miejscu, gdzie znajduje się pigment, co powoduje jego rozpuszczenie i wyciągnięcie na powierzchnię skóry.",
     note:
       "Procedura przeprowadzana jest w bezpiecznych i higienicznych warunkach przez wykwalifikowaną osobę. W zależności od głębokości i intensywności pigmentu może być potrzebnych kilka sesji, aby uzyskać oczekiwany efekt. Celem zabiegu jest poprawa wyglądu, korekta nieudanego makijażu permanentnego lub całkowite usunięcie pigmentu.",
-    prices: ["1 zabieg - 300 zł"],
+    prices: [
+      {
+        label: "1 zabieg - 300 zł",
+        url: "https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D",
+      },
+    ],
   },
 ];
 
@@ -80,10 +121,22 @@ const Cennik = () => {
                 </div>
 
                 <div className="cennik-page__service-prices">
-                  {section.prices.map((price) => (
-                    <div className="cennik-page__price-pill" key={price}>
-                      {price}
-                    </div>
+                  {section.prices.map((price, priceIndex) => (
+                    price.url ? (
+                      <a
+                        className="cennik-page__price-pill"
+                        href={price.url}
+                        key={`${section.title}-${price.label}-${priceIndex}`}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {price.label}
+                      </a>
+                    ) : (
+                      <div className="cennik-page__price-pill" key={`${section.title}-${price.label}-${priceIndex}`}>
+                        {price.label}
+                      </div>
+                    )
                   ))}
                 </div>
               </article>
