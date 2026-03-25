@@ -1,7 +1,7 @@
 import "./AboutSection.scss";
 import aboutImg from "@/shared/assets/images/about.jpg";
 import { Button } from "@/shared/ui/Button";
-
+ 
 export const AboutSection = () => {
   return (
     <section className="about">
@@ -22,9 +22,12 @@ export const AboutSection = () => {
 
         <div className="about__content">
           <div className="about__text about__text--left">
-            <p >
+            <p className="about__intro about__intro--desktop">
               Nazywam się <span className="about__name">ANASTASZJA</span> <br /> i jestem właścicielką studia
               <span className="about__name"> RE LINE</span> <br /> w Lublinie.
+            </p>
+            <p className="about__intro about__intro--mobile">
+              Nazywam się Anastaszja i jestem <br />  właścicielką studia RE LINE w Lublinie.
             </p>
             <p>
               Specjalizuję się w laserowym usuwaniu tatuaży i makijażu permanentnego,
@@ -33,11 +36,6 @@ export const AboutSection = () => {
             <p>
               Moim celem jest przywracanie naturalnego wyglądu skóry i poczucia pewności siebie.
             </p>
-            <Button onClick={() => console.log("clicked")}
-              className="about__button"
-              >
-              Umów się na WIZYTĘ!
-            </Button>
           </div>
 
           <div className="about__photo">
@@ -56,6 +54,13 @@ export const AboutSection = () => {
             </p>
           </div>
         </div>
+
+        <Button
+          onClick={() => console.log("clicked")}
+          className="about__button"
+        >
+          Umów się na WIZYTĘ!
+        </Button>
       </div>
     </section>
   );

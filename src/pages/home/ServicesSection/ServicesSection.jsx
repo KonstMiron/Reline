@@ -27,7 +27,7 @@ const ServicesSection = () => {
             alt="Laserowe usuwanie tatuażu"
           />
           </div>
- 
+  
           <h3>Laserowe usuwanie tatuażu</h3>
           <p>
             Usuń tatuaż laserem pikosekundowym z chłodzeniem Cryo – bez bólu i bez ryzyka!

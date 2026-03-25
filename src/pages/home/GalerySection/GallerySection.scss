@@ -74,16 +74,38 @@
   }
 
   @media (max-width: 768px) {
+    & {
+      padding: 0;
+    }
+
     &__grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 150px);
+      justify-content: center;
       gap: 15px;
     }
-  }
 
-  @media (max-width: 480px) {
-    &__grid {
-      grid-template-columns: 1fr;
-      gap: 10px;
+    &__item img {
+      width: 150px;
+      height: 180px;
+      max-width: none;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    &__button.btn2 {
+      width: 139px;
+      min-width: 139px;
+      max-width: 139px;
+      height: 37px;
+      padding: 0 12px;
+      font-size: 14px;
+
+      .btn2__text {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ export const LaserSection = () => {
           <div className="laser__image laser__image--left">
             <img src={leftImg} alt="Zabieg laserowy" />
           </div>
-
+ 
           <div className="laser__text">
             <p>
               Precyzyjne i bezpieczne zabiegi wykonywane przy użyciu nowoczesnego lasera. <br />

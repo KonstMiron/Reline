@@ -114,10 +114,73 @@
 }
 
 @media (max-width: 700px) {
-  .instagram__btn {
-    width: 100%;
-    max-width: 320px;
-    padding: 16px 40px;
-    font-size: 16px;
+  .instagram {
+    margin-bottom: 30px;
+
+    &__inner {
+      padding: 0 14px;
+    }
+
+    &__kicker {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    &__lead {
+      font-size: 14px;
+      line-height: 1.2;
+      margin: 0 auto 4px;
+      max-width: 340px;
+    }
+    &__title {
+      font-size: 36px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    &__media {
+      transform: translateY(-52px);
+      margin-bottom: 16px;
+    }
+
+    &__phones {
+      width: 386px;
+      height: 239px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    &__button.btn2 {
+      transform: translateY(-52px);
+      width: 248px;
+      min-width: 248px;
+      max-width: 248px;
+      height: 47px;
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 1;
+      margin: 0 auto;
+
+      .btn2__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+      }
+
+      .btn2__text {
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+        font-size: 14px;
+      }
+
+      .btn2__icon img {
+        width: 18px;
+        height: 18px;
+        transform: translateY(-1px);
+      }
+    }
   }
 }
