@@ -44,7 +44,7 @@ Podczas procedury wykorzystywany jest system chłodzenia skóry CRYO, który red
 
         <div className="laser__cta">
           <Button2 onClick={() => console.log("clicked")}>
-            SPRAWDŹ NASZĄ OFERTĘ !
+            <span className="laser__cta-text">SPRAWDŹ NASZĄ OFERTĘ !</span> 
           </Button2>
         </div>
       </div>

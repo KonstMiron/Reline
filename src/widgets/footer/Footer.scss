@@ -1,6 +1,7 @@
 .footer {
   background: var(--bg-color);
   padding: 60px 0 20px;
+  font-family: "Lora", serif;
 
   @media (max-width: 968px) {
     padding: 40px 0 30px;
@@ -130,7 +131,7 @@
   }
 
   &__nav-title {
-    font-family: "Lora", serif;
+    font-family: "Cinzel", serif;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.12em;
@@ -153,7 +154,7 @@
 
     li {
       a {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Lora", serif;
         font-size: 17px;
         font-weight: 400;
         color: rgb(255, 255, 255);
@@ -178,7 +179,7 @@
   }
 
   &__copyright {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lora", sans-serif;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
 
@@ -260,8 +261,21 @@
   }
 
   .footer__nav-list li a {
-    font-size: 14px;
-    line-height: 1.35;
+    font-family: "Lora", serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: opacity 0.2s;
+    line-height: 1.5;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   .footer__copyright {
