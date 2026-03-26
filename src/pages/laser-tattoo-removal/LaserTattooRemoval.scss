@@ -195,8 +195,9 @@
   }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
   .laser-tattoo-removal {
+    margin-top: -1px;
     &__hero-logo {
       width: 400px;
       height: auto;

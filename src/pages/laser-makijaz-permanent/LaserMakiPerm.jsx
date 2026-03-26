@@ -3,7 +3,7 @@ import Footer from "@/widgets/footer";
 import { Button } from "@/shared/ui/Button";
 import CabinetSection from "./CabinetSection";
 import PortfolioSection from "./PortfolioSection";
-import "./LaserMakiPerm.scss";
+// import "./LaserMakiPerm.scss";
 import logo from "@/shared/assets/images/laser-makijaz-permanent/reline.svg";
 import photo1 from "@/shared/assets/images/laser-makijaz-permanent/Photo1.jpg";
 import photo2 from "@/shared/assets/images/laser-makijaz-permanent/Photo2.jpg";
