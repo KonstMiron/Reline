@@ -152,14 +152,15 @@
 
   .laser__image--left {
     grid-area: left;
-    transform: translateY(-100px);
+    transform: translate(-10px, -100px);
+  
     width: 296px;
     height: 395px;
   }
 
   .laser__image--right {
     grid-area: right;
-    transform: translate(10px, -200px);
+    transform: translate(100px, -200px);
     justify-self: end;
     width: 216px;
     height: 297px;
@@ -196,7 +197,7 @@
   }
 
   .laser__cta .btn2 {
-    transform: translate(-200px, -300px);
+    transform: translate(-200px, -285px);
     width: 340px;
     height: 68px;
     padding: 0 32px;

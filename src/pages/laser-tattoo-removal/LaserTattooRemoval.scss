@@ -196,6 +196,9 @@
 }
 
 @media (max-width: 1024px) {
+  .laser-tattoo-removal__section {
+        margin-top: -1px;
+}
   .laser-tattoo-removal {
     margin-top: -1px;
     &__hero-logo {
@@ -207,11 +210,12 @@
   }
     &__section-content {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 60px;
     }
 
     &__questions {
       gap: 32px;
+      width: 100%;
       max-width: 100% !important;
     }
 
@@ -231,18 +235,18 @@
   }
 
    .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:first-child {
-    width: 236px;
-    height: 392px;
+    width: 266px;
+    height: 422px;
     border-radius: 118px / 112px;
     top: -24px;
-    left: -48px;
+    left: -8px;
   }
 
   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:last-child {
-    width: 180px;
-    height: 256px;
+    width: 200px;
+    height: 276px;
     bottom: -10px;
-    right: -50px;
+    right: -20px;
   }
 }
 

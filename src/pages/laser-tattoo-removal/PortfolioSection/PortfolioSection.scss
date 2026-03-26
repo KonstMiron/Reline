@@ -110,13 +110,13 @@
   .portfolio-section {
     &__gallery {
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 50px;
       max-width: 400px;
     }
 
     &__gallery-item {
-      width: 280px;
-      height: 360px;
+      width: 320px;
+      height: 500px;
       border-radius: 140px / 133px;
       margin: 0 auto;
     }
@@ -128,7 +128,7 @@
     padding: 60px 0;
 
     &__title {
-      font-size: 36px;
+      font-size: 44px;
     }
 
     &__subtitle {

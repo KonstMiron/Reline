@@ -254,10 +254,31 @@
     &__content {
       grid-template-columns: 1fr;
       gap: 60px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    &__info {
+      text-align: left;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    &__details {
+      align-items: left;
+      justify-content: center;
+    }
+
+    &__form-container {
+      background: #000000;
+      padding: 50px 0px;
+      margin: 0 calc(-50vw + 50%);
+      width: 100vw;
     }
 
     &__form-wrapper {
       padding: 40px;
+      margin: 0 auto;
     }
 
     &__map {
@@ -267,7 +288,9 @@
         height: 400px;
       }
     }
-
+    &__quote {
+    margin-top: 20px; 
+}
     &__quote-logo {
       width: 350px;
     }
@@ -329,7 +352,8 @@
       padding-right: 0;
       background: #000000;
       padding: 25px;
-      margin: 0 -25px;
+      margin: 0;
+      width: 100%;
     }
 
     &__form-wrapper {

@@ -1,4 +1,4 @@
-import "./CabinetSection.scss";
+// import "./CabinetSection.scss";
 import { Button } from "@/shared/ui/Button";
 import backgroundImg from "@/shared/assets/images/laser-tattoo-removal/fon1.jpg";
 

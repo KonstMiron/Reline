@@ -97,7 +97,7 @@ const Contact = () => {
                 <img src={contactLine} alt="" className="contact__line" />
               </div>
             </div> 
-
+ 
             <div className="contact__form-container">
               <div className="contact__form-wrapper">
                 <form className="contact__form" onSubmit={handleSubmit}>

@@ -88,7 +88,18 @@
     }
   }
 } 
-
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("@/shared/assets/images/Hero-phone.png");
+    background-size: cover;
+    background-position: center top;
+  } 
+    .hero__tablet-brand {
+    width: 500px;
+    height: auto;
+        transform: translateY(85px);
+  }
+}
 @media screen and (max-width: 700px) {
   .hero {
     background-image: url("@/shared/assets/images/Hero-phone.png");
@@ -119,9 +130,9 @@
   }
 
   .hero__tablet-brand {
-    width: 186px;
-    height: 62px;
-    transform: translateY(50px);
+    width: 220px;
+    height: auto;
+    transform: translateY(53px);
     margin-bottom: 16px;
   }
 }
