@@ -1,6 +1,9 @@
 import "./ServicesSection.scss";
 import { Button2 } from "@/shared/ui/Button2";
 import { Link } from "react-router-dom";
+import service1 from "@/shared/assets/images/service-1.jpg";
+import service2 from "@/shared/assets/images/service-2.jpg";
+import service3 from "@/shared/assets/images/service-3.jpg";
 
 const ServicesSection = () => {
   return (
@@ -24,9 +27,9 @@ const ServicesSection = () => {
         <article className="services__card">
           <div className="services__image">
             <img
-            src="/src/shared/assets/images/service-1.jpg"
+            src={service1}
             alt="Laserowe usuwanie tatuażu"
-          />
+          /> 
           </div>
   
           <h3>Laserowe usuwanie tatuażu</h3>
@@ -45,7 +48,7 @@ const ServicesSection = () => {
         <article className="services__card">
            <div className="services__image">
             <img
-            src="/src/shared/assets/images/service-2.jpg"
+            src={service2}
             alt="Laserowe usuwanie makijażu permanentnego"
           />
            </div>
@@ -66,7 +69,7 @@ const ServicesSection = () => {
         <article className="services__card">
            <div className="services__image">
             <img
-            src="/src/shared/assets/images/service-3.jpg"
+            src={service3}
             alt="Usuwanie removerem"
           />
            </div>
