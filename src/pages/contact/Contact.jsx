@@ -39,7 +39,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE", // Замініть на ваш ключ з web3forms.com
+          access_key: "9e8088b2-d623-4ddb-9144-030d8f4bd6ba", // Замініть на ваш ключ з web3forms.com
           name: formData.name,
           phone: formData.phone,
           email: formData.email,

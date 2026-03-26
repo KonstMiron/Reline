@@ -143,6 +143,7 @@
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) and (min-width: 701px) {
+
   .services__header {
     padding: 0px 0 120px;
   }
@@ -193,7 +194,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 20px;
     text-decoration: none !important;
   }
 
