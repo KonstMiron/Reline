@@ -1,4 +1,4 @@
-import "./PortfolioSection.scss";
+//import "./PortfolioSection.scss";
 import { Button } from "@/shared/ui/Button";
 import instIcon from "@/shared/assets/images/inst_icon.svg";
 import logo from "@/shared/assets/images/laser-tattoo-removal/reline.svg";

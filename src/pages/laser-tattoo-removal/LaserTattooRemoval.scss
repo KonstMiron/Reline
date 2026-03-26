@@ -202,7 +202,9 @@
       width: 400px;
       height: auto;
     }
-
+    .laser-tattoo-removal__section--reverse .laser-tattoo-removal__section-content {
+     direction: ltr; 
+  }
     &__section-content {
       grid-template-columns: 1fr;
       gap: 40px;
@@ -220,21 +222,27 @@
       height: auto;
     }
   }
+  .laser-tattoo-removal__section--reverse .laser-tattoo-removal__section-content > * {
+    width: 100%;
+}
 
   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image-wrapper {
     height: 400px;
   }
 
-  .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:first-child {
-    width: 200px;
-    height: 300px;
-    border-radius: 100px / 95px;
+   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:first-child {
+    width: 236px;
+    height: 392px;
+    border-radius: 118px / 112px;
+    top: -24px;
+    left: -48px;
   }
 
   .laser-tattoo-removal__section--reverse .laser-tattoo-removal__image:last-child {
     width: 180px;
-    height: 250px;
-    border-radius: 90px / 86px;
+    height: 256px;
+    bottom: -10px;
+    right: -50px;
   }
 }
 
