@@ -312,7 +312,8 @@
     }
 
     &__line {
-      width: 100%;
+      max-width: 380px;
+
       height: auto;
       display: block;
       object-fit: cover;
