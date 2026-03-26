@@ -55,16 +55,16 @@ export const Footer = () => {
               <h3 className="footer__nav-title">INNE</h3>
               <ul className="footer__nav-list">
                 <li>
-                  <a href="#polityka">Polityka Prywatności</a>
+                  <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
                 </li>
                 <li>
-                  <a href="#regulamin">Regulamin usług</a>
+                  <Link to="/regulamin-uslug">Regulamin usług</Link>
                 </li>
                 <li>
-                  <a href="#regulamin-gabinetu">Regulamin gabinetu</a>
+                  <Link to="/regulamin-gabinetu">Regulamin gabinetu</Link>
                 </li>
                 <li>
-                  <a href="#platnosci">Zasady płatności</a>
+                  <Link to="/zasady-platnosci">Zasady płatności</Link>
                 </li>
               </ul>
             </div>

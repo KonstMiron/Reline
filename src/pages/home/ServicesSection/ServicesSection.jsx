@@ -1,5 +1,6 @@
 import "./ServicesSection.scss";
 import { Button2 } from "@/shared/ui/Button2";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
@@ -33,10 +34,12 @@ const ServicesSection = () => {
             Usuń tatuaż laserem pikosekundowym z chłodzeniem Cryo – bez bólu i bez ryzyka!
           Twoja skóra zasługuje na nowy początek. 
           </p>
+            <Link to="/laser-tattoo-removal">
             <Button2 onClick={() => console.log("clicked")}
                 className="btn-more">
                 ZOBACZ WIĘCEJ!
             </Button2>
+            </Link>
         </article>
 
         <article className="services__card">
@@ -51,10 +54,13 @@ const ServicesSection = () => {
           <p>
             Profesjonalne usuwanie makijażu permanentnego przy użyciu lasera pikosekundowego – szybkie, bezpieczne i komfortowe.
           </p>
+            <Link to="/laser-makijaz-permanent">
+
             <Button2 onClick={() => console.log("clicked")}
                 className="btn-more">
                 ZOBACZ WIĘCEJ!
             </Button2>
+            </Link>
         </article>
 
         <article className="services__card">
@@ -68,10 +74,12 @@ const ServicesSection = () => {
           <h3>Usuwanie makijażu permanentnego removerem</h3>
           <p>
             Usuwanie makijażu permanentnego removerem to łagodna, ale skuteczna metoda eliminacji pigmentu z brwi, ust i oczu.          </p>
+              <Link to="/laser-makijaz-remover">
               <Button2 onClick={() => console.log("clicked")}
                 className="btn-more">
                 ZOBACZ WIĘCEJ!
             </Button2>
+            </Link>
         </article>
       </div>
     </section>

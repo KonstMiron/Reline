@@ -45,20 +45,22 @@ export const Header2 = () => {
             </button>
             {isDropdownOpen && (
               <div className="header2__dropdown-menu header2__dropdown-menu--down">
-                <Link to="/laser-makijaz-remover" className="header2__dropdown-item">
-                  USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
+                <Link to="/laser-tattoo-removal" className="header2__dropdown-item">
+                  LASEROWE USUWANIE TATUAŻU
                 </Link>
                 <Link to="/laser-makijaz-permanent" className="header2__dropdown-item">
                   LASEROWE USUWANIE MAKIJAŻU PERMANENTNEGO
                 </Link>
-                <Link to="/laser-tattoo-removal" className="header2__dropdown-item">
-                  LASEROWE USUWANIE TATUAŻU
+                <Link to="/laser-makijaz-remover" className="header2__dropdown-item">
+                  USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
                 </Link>
               </div>
             )}
           </div>
           <Link to="/contact">KONTAKT</Link>
-          <a href="#">BOOKSY</a>
+          <a href="https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D" target="_blank" rel="noopener noreferrer">
+            BOOKSY
+          </a>
         </nav>
       </div>
     </header>

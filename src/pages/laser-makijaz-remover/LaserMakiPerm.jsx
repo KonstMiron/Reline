@@ -95,7 +95,9 @@ const LaserMakiPerm = () => {
               Remover to alternatywa dla lasera – stosowany w przypadkach, gdy pigment jest odporny na działanie światła lub został osadzony zbyt głęboko.<br />
               Preparat działa miejscowo w warstwie skóry, w której znajduje się pigment. Składniki aktywne powodują reakcję chemiczną, która osłabia wiązania cząsteczek pigmentu.
             </p>
-            <Button className="laser-tattoo-removal__cta">Zapisać się!</Button>
+            <a href="https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D" target="_blank" rel="noopener noreferrer">
+              <Button className="laser-tattoo-removal__cta">Zapisać się!</Button>
+            </a>
           </div>
           <img src={logo} alt="R'LINE Logo" className="laser-tattoo-removal__hero-logo" />
         </section>

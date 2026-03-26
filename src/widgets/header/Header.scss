@@ -22,13 +22,14 @@
 
   .header__nav {
     display: flex;
-    gap: 48px;
+    gap: 100px;
     transition: gap 1.2s ease;
 
     a,
     button {
+      padding: 12px 24px;
       font-family: "Lora", serif;
-      font-size: 16px;
+      font-size: 18px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-color);
@@ -42,7 +43,6 @@
       }
     }
   }
-
   .header__dropdown-wrapper {
     position: relative;
   }
@@ -128,7 +128,7 @@
       width: 500px;
       height: auto;
       transition: width 1.2s ease;
-      transform: translateY(-50px);
+      transform: translate(-4px, -50px);
     }
   }
 }

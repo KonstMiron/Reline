@@ -26,6 +26,7 @@
     font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 2px;
+    margin-top: 10px;
   }
 
   &__title {
@@ -34,7 +35,7 @@
     letter-spacing: 4px;
     font-weight: 400;
     margin-bottom: 40px;
-    margin-top: 0;
+    margin-top: 25px;
   }
 
   &__media {
@@ -53,16 +54,19 @@
   }
 
   &__button.btn2 {
+    margin-top: 25px;
+    font-size: 20px;
     letter-spacing: normal;
-    max-width: 480px;
-    min-width: 480px;
-    height: 100px;
+    max-width: 3600px;
+    min-width: 360px;
+    height: 68px;
     padding: 0 40px;
     transform: translateY(-80px);
 
     .btn2__icon img {
-      width: 28px;
-      height: 28px;
+      transform: translateY(-1px);
+      width: 24px;
+      height: 24px;
     }
   }
 }
@@ -140,15 +144,13 @@
     }
 
     &__media {
-      transform: translateY(-52px);
+      transform: translateY(-42px);
       margin-bottom: 16px;
     }
 
     &__phones {
-      width: 386px;
+      width: 486px;
       height: 239px;
-      max-width: 100%;
-      object-fit: contain;
     }
 
     &__button.btn2 {
@@ -160,7 +162,7 @@
       padding: 0 20px;
       font-size: 14px;
       line-height: 1;
-      margin: 0 auto;
+      margin: 25px auto 0;
 
       .btn2__icon {
         display: inline-flex;

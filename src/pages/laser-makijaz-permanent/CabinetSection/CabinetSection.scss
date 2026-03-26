@@ -1,7 +1,7 @@
 .cabinet-section {
   position: relative;
   min-height: 500px;
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -64,6 +64,8 @@
   }
 
   &__button {
+    font-size: 20px;
+    width: 260px;
     margin: 0 auto;
   }
 }

@@ -14,7 +14,7 @@ const PortfolioSection = () => {
         <p className="portfolio-section__subtitle">Zobacz nasze portfolio na Instagramie</p>
         
         <Button 
-          href="https://instagram.com/reline_lublin"
+          href="https://www.instagram.com/reline.studio.lbn/"
           target="_blank"
           className="portfolio-section__button"
           icon={<img src={instIcon} alt="Instagram" />}

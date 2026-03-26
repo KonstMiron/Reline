@@ -3,6 +3,7 @@ import leftImg from "@/shared/assets/images/laser-left.jpg";
 import rightImg from "@/shared/assets/images/laser-right.jpg";
 import map from "@/shared/assets/images/map.svg";
 import { Button2 } from "@/shared/ui/Button2";
+import { Link } from "react-router-dom";
 export const LaserSection = () => {
   return (
     <section className="laser">
@@ -43,9 +44,11 @@ Podczas procedury wykorzystywany jest system chłodzenia skóry CRYO, który red
         </div>
 
         <div className="laser__cta">
+           <Link to="/cennik">
           <Button2 onClick={() => console.log("clicked")}>
             <span className="laser__cta-text">SPRAWDŹ NASZĄ OFERTĘ !</span> 
           </Button2>
+          </Link> 
         </div>
       </div>
     </section>

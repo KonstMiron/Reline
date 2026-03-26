@@ -59,11 +59,14 @@ export const GallerySection = () => {
         </div>
         <div className="gallery__content">
             <h6 className="gallery__title">SPRAWDŹ DOSTĘPNE TERMINY</h6>
+            <a href="https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D" target="_blank" rel="noopener noreferrer">
+
             <Button2 onClick={() => console.log("clicked")}
                 className="gallery__button"
             >
                 Zapisać się!
             </Button2>
+            </a>
         </div>
       </div>
     </section>

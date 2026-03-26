@@ -63,15 +63,19 @@
 
 
     p + p {
-      margin-top: 50px;
+      margin-top: 55px;
     }
   }
   &__text--left {
-    transform: translate(50px, 50px);
+    transform: translate(50px, -30px);
+    width: 379px;
+  }
+  &__text--right {
+    transform: translate(0px, -15px);
     width: 379px;
   }
   &__name {
-    font-family: "Cinzel", serif;
+    font-family: "Lora", serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 120%;
@@ -97,12 +101,17 @@
     margin-top: 40px;
   }
 
+  a {
+    text-decoration: none !important;
+  }
+
       .btn {
+      font-size: 20px; 
       letter-spacing: normal;
-      width: 396px;
-      height: 85px;
+      width: 380px;
+      height: 65px;
       padding: 0 40px;
-      transform: translate(50px, -70px);
+      transform: translate(45px, -105px);
     }
 }
 
@@ -157,6 +166,9 @@
 }
 
 @media (max-width: 1024px) {
+  .about{
+    padding-bottom: 0;
+  }
   .layer{
     font-size: 110px; 
 
@@ -192,7 +204,11 @@
     font-size: 14px;
   }
   .about__text--left {
-    transform: translate(50px, 50px);
+    transform: translate(50px, 0px);
+    max-width: 208px;
+  }
+  .about__text--right {
+    transform: translate(0px, 0px);
     max-width: 208px;
   }
   .about__name {
@@ -209,11 +225,12 @@
   }
 
   .about .btn {
+    margin-top: -50px;
     width: 272px;
     height: 58px;
     padding: 0 24px;
     font-size: 17px;
-    transform: none;
+    transform: translate(50px, -100px);
   }
 }
 
@@ -270,7 +287,7 @@
   }
 
   .about__text--left {
-    transform: translate(44px, 44px);
+    transform: translate(0px, 0px);
     max-width: 183px;
   }
 
@@ -282,7 +299,7 @@
   }
 
   .about__text p + p {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   .about .btn {
@@ -290,10 +307,15 @@
     height: 51px;
     padding: 0 21px;
     font-size: 15px;
-    transform: translate(50px, 0px);
+    transform: translate(-10px, -70px);
   }
 }
-
+ @media (max-width: 768px) {
+    .about__text--right {
+    max-width: 183px;
+  }
+  
+ }
 @media (max-width: 700px) {
     .about{
     background: linear-gradient(
@@ -342,6 +364,9 @@
   .about__intro--mobile {
     display: block;
   }
+  .about__text--left{
+    transform: translateY(-20px);
+  }
 
   .about__text--left p:nth-of-type(3) {
     display: none;
@@ -356,12 +381,13 @@
   }
 
   .about__photo {
-    width: 195px;
-    height: 318px;
+    width: 245px;
+    height: 428px;
     border-radius: 120px;
   }
 
   .about__text--right {
+    margin-top: 20px;
     max-width: 290px;
   }
 
@@ -381,18 +407,19 @@
     display: block;
   }
 
-  .about__button {
+  .about .btn {
+    margin: 20px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px auto 0;
-  }
-
-  .about .btn {
     width: 240px;
     height: 48px;
     transform: none;
     padding: 0 20px;
     font-size: 14px;
+  }
+
+  a {
+    text-decoration: none !important;
   }
 }

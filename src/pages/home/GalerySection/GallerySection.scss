@@ -1,5 +1,5 @@
 .gallery {
-  padding: 60px 0;
+  padding: 0px 0 60px;
 
   &__grid {
     display: grid;
@@ -30,16 +30,17 @@
     }
     &__title {
         font-family: "Cinzel", serif;
-        font-size: 36px;
+        font-size: 28px;
         letter-spacing: 1.2px;
         margin-bottom: 2px; 
         font-weight: 400;
     }
 
     &__button.btn2 {
+      font-size: 20px;
         letter-spacing: normal;
         width: 260px;
-        height: 68px;
+        height: 58px;
         padding: 0 40px;
     }
 
@@ -79,14 +80,14 @@
     }
 
     &__grid {
-      grid-template-columns: repeat(2, 150px);
+      grid-template-columns: repeat(2, 170px);
       justify-content: center;
       gap: 15px;
     }
 
     &__item img {
-      width: 150px;
-      height: 180px;
+      width: 170px;
+      height: 200px;
       max-width: none;
     }
 

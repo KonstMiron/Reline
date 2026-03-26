@@ -103,7 +103,9 @@ const Cennik = () => {
               Zapoznaj się z naszą ofertą cenową przygotowaną z myślą o przejrzystości i komforcie naszych klientów. Każda usługa została starannie opracowana, aby zapewnić najwyższą jakość oraz satysfakcję z efektów. <br className="br" />
                 Wierzymy, że profesjonalizm i dbałość o detale powinny iść w parze z uczciwą i zrozumiałą polityką cenową. Dzięki temu możesz łatwo wybrać usługę najlepiej <br /> dopasowaną do swoich potrzeb.
             </p>
+             <a href="https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D" target="_blank" rel="noopener noreferrer">
             <Button className="cennik-page__cta">Zapisać się!</Button>
+            </a>
           </div>
         </section>
 
@@ -144,7 +146,9 @@ const Cennik = () => {
 
             <div className="cennik-page__bottom-cta">
               <h2 className="cennik-page__bottom-cta-title">SPRAWDŹ DOSTĘPNE TERMINY</h2>
+               <a href="https://booksy.com/pl-pl/303971_reline-studio_tatuaz-i-piercing_6832_lublin?do=invite&_branch_match_id=1469312206242631988&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVtwgOyDULCzOtiEiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAxHHrizwAAAA%3D" target="_blank" rel="noopener noreferrer">
               <Button className="cennik-page__bottom-cta-button">ZAPISAĆ SIĘ!</Button>
+              </a>
             </div>
           </div>
         </section>

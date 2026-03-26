@@ -67,14 +67,14 @@ const HeaderMobile = ({ showBooksy = false }) => {
             </button>
 
             <div className={`header-mobile__submenu ${isTreatmentsOpen ? "header-mobile__submenu--open" : ""}`}>
-              <Link to="/laser-makijaz-remover" onClick={closeMenu}>
-                USUWANIE MAKIJAZU PERMANENTNEGO REMOVEREM
+              <Link to="/laser-tattoo-removal" onClick={closeMenu}>
+                LASEROWE USUWANIE TATUAZU
               </Link>
               <Link to="/laser-makijaz-permanent" onClick={closeMenu}>
                 LASEROWE USUWANIE MAKIJAZU PERMANENTNEGO
               </Link>
-              <Link to="/laser-tattoo-removal" onClick={closeMenu}>
-                LASEROWE USUWANIE TATUAZU
+              <Link to="/laser-makijaz-remover" onClick={closeMenu}>
+                USUWANIE MAKIJAZU PERMANENTNEGO REMOVEREM
               </Link>
             </div>
 

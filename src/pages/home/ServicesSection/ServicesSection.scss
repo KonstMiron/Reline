@@ -10,7 +10,7 @@
     background: #d9d9d9;
     color: #080808;
     text-align: center;
-    padding: 50px 0 160px;
+    padding: 0px 0 160px;
     overflow: hidden;
   } 
 
@@ -71,7 +71,7 @@
 
     display: flex;  
     flex-direction: column;   /* ⬅ вертикальна колонка */
-    height: 100%;          /* ⬅ всі картки однакової висоти */
+    height: 900px;          /* ⬅ всі картки однакової висоти */
   }
 
   /* ================= IMAGE WITH RECTANGLES ================= */
@@ -123,13 +123,20 @@
 
 /* ================= BUTTON ================= */
 
+.services__card a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+  text-decoration: none !important;
+}
+
 .btn-more.btn2 {
-   margin-top: auto;
+  font-size: 20px;
    align-self: center;
    letter-spacing: normal;
    line-height: 1.2;
-   max-width: 340px;
-   min-width: 320px;
+   width: 300px;
    padding: 19.5px 47px;
 }
 
@@ -182,6 +189,14 @@
     margin: 0 auto 40px;
   }
 
+  .services__card a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+    text-decoration: none !important;
+  }
+
   .btn-more.btn2 {
     margin-top: 0;
     width: 280px;
@@ -228,7 +243,7 @@
 
 @media (max-width: 700px) {
   .services__header {
-    padding: 20px 0 40px;
+    padding: 50px 0 40px;
   }
 
   .services__title {
@@ -255,6 +270,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
 
   .services__image {
@@ -297,6 +313,14 @@
     padding: 0;
     margin: 0 auto 20px;
     line-height: 1.3;
+  }
+
+  .services__card a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none !important;
   }
 
   .btn-more.btn2 {

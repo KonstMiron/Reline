@@ -59,17 +59,17 @@ export const Header = () => {
               <span className={`header__caret ${(isScrolled && !isDropdownOpen) || (!isScrolled && isDropdownOpen) ? 'header__caret--rotated' : ''}`}>
                 <img src={arrowZabiegi} alt="Arrow" />
               </span>
-            </button>
+            </button> 
             {isDropdownOpen && (
               <div className={`header__dropdown-menu ${isScrolled ? 'header__dropdown-menu--down' : 'header__dropdown-menu--up'}`}>
-                <Link to="/laser-makijaz-remover" className="header__dropdown-item">
-                  USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
+                <Link to="/laser-tattoo-removal" className="header__dropdown-item">
+                  LASEROWE USUWANIE TATUAŻU
                 </Link>
                 <Link to="/laser-makijaz-permanent" className="header__dropdown-item">
                   LASEROWE USUWANIE MAKIJAŻU PERMANENTNEGO
                 </Link>
-                <Link to="/laser-tattoo-removal" className="header__dropdown-item">
-                  LASEROWE USUWANIE TATUAŻU
+                <Link to="/laser-makijaz-remover" className="header__dropdown-item">
+                  USUWANIE MAKIJAŻU PERMANENTNEGO REMOVEREM
                 </Link>
               </div>
             )}
