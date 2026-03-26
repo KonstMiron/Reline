@@ -5,7 +5,7 @@ import logoHeader from "@/shared/assets/images/contact/reline.svg";
 import iconMap from "@/shared/assets/images/contact/icon-map.svg";
 import iconInst from "@/shared/assets/images/contact/icon-inst.svg";
 import iconTel from "@/shared/assets/images/contact/icon-tel.svg";
-import contactLine from "@/shared/assets/images/contact/line.svg";
+import contactLine from "@/shared/assets/images/contact/line.png";
 import "./Contact.scss";
  
 const Contact = () => {
